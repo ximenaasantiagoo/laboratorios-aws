@@ -2,18 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bitácora de Laboratorios</title>
+  <title>Documentación de Laboratorios AWS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
 
   <style>
     :root {
-      /* Rosa Fucsia */
       --theme-color: #ff2a85; 
     }
-    body, .content, .sidebar {
-      background-color: #121214 !important; 
+    body, .content {
+      background-color: #0d0d0f !important; 
+    }
+    .sidebar {
+      background-color: #141416 !important;
+      border-right: 1px solid #202024 !important; /* Línea sutil divisoria */
     }
     .content h1, .content h2, .content h3 {
       color: #ff2a85 !important;
@@ -28,12 +31,15 @@
       color: #ff2a85 !important;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
+    .sidebar ul li strong {
+      color: #ffb6c1 !important; /* Un rosa pastel suave para los subtítulos del menú */
+    }
     .sidebar ul li.active > a, .sidebar ul li a:hover {
-      color: #ffdbed !important; 
+      color: #ff69b4 !important; 
       text-decoration: underline;
     }
     code {
-      color: #ffb6c1 !important;
+      color: #ffb6c1 !important; 
     }
   </style>
 </head>
@@ -46,8 +52,10 @@
       loadSidebar: true, 
       coverpage: false,
       homepage: 'README.md',
+      /* CONFIGURACIÓN REFORZADA PARA REPOSITORIOS DE GITHUB */
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
+        '/.*/_sidebar.md': '/laboratorios-aws/_sidebar.md',
+        '/_sidebar.md': '/laboratorios-aws/_sidebar.md'
       }
     }
   </script>
