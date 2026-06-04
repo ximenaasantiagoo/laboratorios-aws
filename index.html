@@ -2,31 +2,38 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Documentación de Laboratorios AWS</title>
+  <title>Bitácora de Laboratorios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
 
   <style>
     :root {
-      /* Rosa fuerte */
+      /* Rosa Fucsia */
       --theme-color: #ff2a85; 
     }
-    
-    /* Color para los títulos principales (h1) y subtítulos (h2, h3) */
+    body, .content, .sidebar {
+      background-color: #121214 !important; 
+    }
     .content h1, .content h2, .content h3 {
       color: #ff2a85 !important;
-      font-family: 'Courier New', Courier, monospace; /* Tipografía estilo código */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     }
-
-    /* Color del nombre del proyecto en la barra lateral */
     .sidebar .app-name {
-      color: #ffb6c1 !important;
+      color: #ff2a85 !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: bold;
     }
-
-    /* Estilo para resaltar los bloques de código */
+    .sidebar ul li a {
+      color: #ff2a85 !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    .sidebar ul li.active > a, .sidebar ul li a:hover {
+      color: #ffdbed !important; 
+      text-decoration: underline;
+    }
     code {
-      color: #ff69b4 !important;
+      color: #ffb6c1 !important;
     }
   </style>
 </head>
