@@ -16,11 +16,11 @@
     }
     .sidebar {
       background-color: #141416 !important;
-      border-right: 1px solid #202024 !important; /* Línea sutil divisoria */
+      border-right: 1px solid #202024 !important;
     }
     .content h1, .content h2, .content h3 {
       color: #ff2a85 !important;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
     .sidebar .app-name {
       color: #ff2a85 !important;
@@ -32,7 +32,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
     .sidebar ul li strong {
-      color: #ffb6c1 !important; /* Un rosa pastel suave para los subtítulos del menú */
+      color: #ffb6c1 !important; 
     }
     .sidebar ul li.active > a, .sidebar ul li a:hover {
       color: #ff69b4 !important; 
@@ -45,24 +45,48 @@
       border: none;
       background: #ff2a85 !important;
       height: 1px;
-      opacity: 1;  
+      opacity: 1;
     }
   </style>
 </head>
 <body>
+  <div class="sidebar" id="sidebar-menu" style="display: none;">
+    <div class="app-name">Bootcamp Labs</div>
+    <div class="sidebar-nav">
+      <ul>
+        <li><strong>Almacenamiento (Storage)</strong>
+          <ul>
+            <li><a href="#/storage/s3">Introducción a Amazon S3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div id="app">Cargando bitácora...</div>
+
   <script>
     window.$docsify = {
       name: 'Bootcamp Labs',
       repo: 'https://github.com/ximenaasantiagoo/laboratorios-aws', 
-      loadSidebar: true, 
+      loadSidebar: false, // APAGAMOS la carga externa para usar nuestro menú fijo
       coverpage: false,
-      homepage: 'README.md',
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      }
+      homepage: 'README.md'
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <script>
+    // Este pequeño script inyecta nuestro menú HTML dentro del Docsify cuando arranca
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(function() {
+        var nativeNav = document.querySelector('.sidebar-nav');
+        var customMenu = document.querySelector('#sidebar-menu .sidebar-nav').innerHTML;
+        if (nativeNav) {
+          nativeNav.innerHTML = customMenu;
+        }
+      }, 500);
+    });
+  </script>
 </body>
 </html>
