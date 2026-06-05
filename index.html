@@ -50,43 +50,17 @@
   </style>
 </head>
 <body>
-  <div class="sidebar" id="sidebar-menu" style="display: none;">
-    <div class="app-name">Bootcamp Labs</div>
-    <div class="sidebar-nav">
-      <ul>
-        <li><strong>Almacenamiento (Storage)</strong>
-          <ul>
-            <li><a href="#/storage/s3">Introducción a Amazon S3</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-
   <div id="app">Cargando bitácora...</div>
 
   <script>
     window.$docsify = {
       name: 'Bootcamp Labs',
       repo: 'https://github.com/ximenaasantiagoo/laboratorios-aws', 
-      loadSidebar: false, // APAGAMOS la carga externa para usar nuestro menú fijo
+      loadSidebar: true, // Activamos el menú lateral nativo
       coverpage: false,
       homepage: 'README.md'
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  
-  <script>
-    // Este pequeño script inyecta nuestro menú HTML dentro del Docsify cuando arranca
-    document.addEventListener("DOMContentLoaded", function() {
-      setTimeout(function() {
-        var nativeNav = document.querySelector('.sidebar-nav');
-        var customMenu = document.querySelector('#sidebar-menu .sidebar-nav').innerHTML;
-        if (nativeNav) {
-          nativeNav.innerHTML = customMenu;
-        }
-      }, 500);
-    });
-  </script>
 </body>
 </html>
