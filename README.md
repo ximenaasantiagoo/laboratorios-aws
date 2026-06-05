@@ -1,4 +1,5 @@
-# Documentación de Laboratorios AWS
+
+# <span style="color: #ff2a85 !important;">Documentación de Laboratorios AWS</span>
 
 En este espacio documentaré de manera detallada el desarrollo, la arquitectura y los aprendizajes clave de cada laboratorio realizado durante el bootcamp.
 
