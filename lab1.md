@@ -1,4 +1,4 @@
-# Lab: Introducción a Amazon S3
+# Lab: Introducción a Amazon EC2
 
 > **Tags:** `Amazon S3` `Storage` `Cloud Fundamentals` `AWS`
 
