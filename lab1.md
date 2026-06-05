@@ -1,6 +1,6 @@
 # <span style="color: #f3b4dd !important;">Lab: Introducción a Amazon EC2</span>
 
-> **Tags:** `Amazon EC2` `Virtual Machines` `Compute` `AWS`
+> **Tags:** `Amazon EC2` `Máquina Virtual` `AWS`
 
 ---
 
