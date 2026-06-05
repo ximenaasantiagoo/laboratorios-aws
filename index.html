@@ -56,9 +56,12 @@
     window.$docsify = {
       name: 'Bootcamp Labs',
       repo: 'https://github.com/ximenaasantiagoo/laboratorios-aws', 
-      loadSidebar: true, // Activamos el menú lateral nativo
+      loadSidebar: true, 
       coverpage: false,
       homepage: 'README.md'
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
