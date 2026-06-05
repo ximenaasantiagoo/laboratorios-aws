@@ -5,7 +5,7 @@
 ---
 
 ## Objetivo
-El objetivo de este laboratorio fue comprender el ciclo de vida de una instancia de cómputo en la nube mediante el lanzamiento, redimensionamiento, monitoreo y gestión de una máquina virtual en Amazon EC2, además de aplicar reglas de firewall con grupos de seguridad y probar la protección contra terminación.
+El propósito de este laboratorio fue dominar la gestión de instancias en Amazon EC2. Aprendimos a lanzar una máquina virtual, protegerla con Security Groups, monitorear su estado, redimensionar sus recursos de cómputo y almacenamiento, y asegurar su disponibilidad configurando la protección contra terminación para evitar borrados accidentales en la infraestructura.
 
 ### 1. Lanzamiento de la Instancia EC2
 Para iniciar el servidor virtual, se configuró una instancia en la consola de AWS con las siguientes especificaciones técnicas:
