@@ -1,2 +1,2 @@
-- **Almacenamiento (Storage)**
-  - [Introducción a Amazon S3](storage/s3.md)
+- **Laboratorio 1**
+  - [Introducción a Amazon S3](s3.md)
