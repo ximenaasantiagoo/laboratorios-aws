@@ -12,4 +12,4 @@ A lo largo de este entrenamiento, el enfoque principal estará en:
 
 ---
 
-*Usa el menú de la barra lateral para navegar a través de los diferentes módulos y prácticas desarrolladas.*
+*Usa el menú de la barra lateral para navegar a través de los diferentes laboratorios realizados.*
