@@ -1,2 +1,6 @@
-- **Laboratorio 1**
-  - [Introducción a Amazon S3](s3.md)
+- **Laboratorio2**
+  - [Introducción a Amazon EC2](lab1.md)
+- **Laboratorio2**
+  - [Introducción a Linux Amazon AMI](lab2.md)
+- **Laboratorio3**
+  - [Línea de comandos Linux](lab3.md)
