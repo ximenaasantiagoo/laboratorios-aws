@@ -1,4 +1,4 @@
-# <span style="color: #ff2a85 !important;">Lab: Introducción a Amazon EC2</span>
+# <span style="color: #f5f5f5 !important;">Lab: Introducción a Amazon EC2</span>
 
 > **Tags:** `Amazon S3` `Storage` `Cloud Fundamentals` `AWS`
 
