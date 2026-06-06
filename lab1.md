@@ -52,4 +52,3 @@ En la última parte del lab probé el mecanismo que evita borrados accidentales:
 
 ### Conclusión
 
-Con este laboratorio puse en práctica conceptos clave como el despliegue automático con `User Data`, la configuración de redes bajo el principio de menor privilegio, y la flexibilidad del cómputo elástico para escalar y proteger recursos en AWS. Fue un buen primer contacto con la infraestructura real en la nube.
