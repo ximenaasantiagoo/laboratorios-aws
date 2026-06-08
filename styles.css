@@ -1,73 +1,63 @@
-/* 1. Variable global de Docsify para cambiar el color de acento principal (enlaces, detalles) */
+/* 1. Variables globales */
 :root {
-  --theme-color: #ff2a85; /* Color Rosa */
+  --theme-color: #ff2a85;       /* Rosa vibrante */
+  --pastel-pink: #f3b4dd;       /* Rosa pastel para código y citas */
+  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-/* 2. Cambia el fondo general de la página a un tono casi negro */
+/* 2. Al aplicarla al body, la heredan los títulos y menús de forma automática */
+body {
+  font-family: var(--font-base);
+}
+
+/* 3. Fondos y diseño general */
 body, .content {
   background-color: #0d0d0f !important; 
 }
 
-/* 3. Diseña la barra lateral: un gris muy oscuro con un borde sutil a la derecha */
 .sidebar {
   background-color: #141416 !important;
   border-right: 1px solid #202024 !important;
 }
 
-/* 4. Hace que todos los títulos (H1, H2, H3, H4) de tus apuntes sean rosas */
-#main h1, #main h2, #main h3, #main h4 {
-  color: #ff2a85 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+/* 4. Títulos y Nombre de la App */
+#main h1, #main h2, #main h3, #main h4, .sidebar .app-name {
+  color: var(--theme-color) !important;
 }
-
-/* 5. El nombre de la app ('AWS re/Start') en la barra lateral en rosa y negritas */
 .sidebar .app-name {
-  color: #ff2a85 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
-/* 6. Los enlaces del menú lateral en un tono pastel azulado claro */
+/* 5. Menú Lateral */
 .sidebar ul li a {
   color: #daf0f4 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-/* 7. Si pones texto en negrita dentro del menú, se pintará en un tono cian/turquesa */
 .sidebar ul li strong {
   color: #00cbd6 !important; 
 }
 
-/* 8. Cuando pasas el mouse por encima de un enlace o estás leyéndolo, se vuelve blanco y se subraya */
 .sidebar ul li.active > a, .sidebar ul li a:hover {
   color: #fbf2f2 !important; 
   text-decoration: underline;
 }
 
-/* 9. Los bloques de código en línea (como cuando escribes comandos) resaltan en rosa pastel */
+/* 6. Bloques de texto (Código y Citas) */
 code {
-  color: #f3b4dd !important; 
+  color: var(--pastel-pink) !important; 
 }
 
-/* 10. Las líneas de separación (<hr>) se vuelven muy sutiles y semitransparentes */
+blockquote {
+  border-left: 4px solid var(--pastel-pink) !important;
+}
+
+/* 7. Elementos divisores y limpieza de enlaces en títulos */
 .content hr {
   border: none;
   background: rgba(255, 255, 255, 0.15) !important;
   height: 1px;
-  opacity: 1;
 }
 
-/* 11. Los bloques de citas (blockquote) llevan una barra vertical rosa pastel a la izquierda */
-blockquote {
-  border-left: 4px solid rgb(243, 180, 221) !important;
-}
-
-/* 12. Quita el subrayado molesto de los enlaces que se generan automáticamente junto a los títulos */
-.markdown-section h1 a, 
-.markdown-section h1 a:hover,
-.markdown-section h2 a, 
-.markdown-section h2 a:hover,
-.markdown-section h3 a, 
-.markdown-section h3 a:hover {
+.markdown-section h1 a, .markdown-section h2 a, .markdown-section h3 a {
   text-decoration: none !important;
 }
