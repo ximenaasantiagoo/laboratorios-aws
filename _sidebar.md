@@ -1,6 +1,6 @@
 - **Laboratorio 1**
-  - [Introducción a Amazon EC2](lab1.md)
+  - [Introducción a Amazon EC2](laboratorios/lab1.md)
 - **Laboratorio 2**
-  - [Introducción a Linux Amazon AMI](lab2.md)
+  - [Introducción a Linux Amazon AMI](laboratorios/lab2.md)
 - **Laboratorio 3**
-  - [Línea de comandos Linux](lab3.md)
+  - [Línea de comandos Linux](laboratorios/lab3.md)
