@@ -1,0 +1,61 @@
+:root {
+  --theme-color: #ff2a85; 
+}
+
+body, .content {
+  background-color: #0d0d0f !important; 
+}
+
+.sidebar {
+  background-color: #141416 !important;
+  border-right: 1px solid #202024 !important;
+}
+
+#main h1, #main h2, #main h3, #main h4 {
+  color: #ff2a85 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.sidebar .app-name {
+  color: #ff2a85 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.sidebar ul li a {
+  color: #daf0f4 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.sidebar ul li strong {
+  color: #00cbd6 !important; 
+}
+
+.sidebar ul li.active > a, .sidebar ul li a:hover {
+  color: #fbf2f2 !important; 
+  text-decoration: underline;
+}
+
+code {
+  color: #f3b4dd !important; 
+}
+
+.content hr {
+  border: none;
+  background: rgba(255, 255, 255, 0.15) !important;
+  height: 1px;
+  opacity: 1;
+}
+
+blockquote {
+  border-left: 4px solid rgb(243, 180, 221) !important;
+}
+
+.markdown-section h1 a, 
+.markdown-section h1 a:hover,
+.markdown-section h2 a, 
+.markdown-section h2 a:hover,
+.markdown-section h3 a, 
+.markdown-section h3 a:hover {
+  text-decoration: none !important;
+}
