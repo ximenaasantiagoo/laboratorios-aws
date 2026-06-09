@@ -31,6 +31,9 @@ body, .content {
 /* 5. Menú Lateral */
 .sidebar ul li a {
   color: #daf0f4 !important;
+  white-space: normal !important;      
+  word-wrap: break-word !important;     
+  line-height: 1.4 !important;
 }
 
 .sidebar ul li strong {
@@ -41,6 +44,9 @@ body, .content {
   color: #fbf2f2 !important; 
   text-decoration: underline;
 }
+
+
+
 
 /* 6. Bloques de texto (Código y Citas) */
 code {
