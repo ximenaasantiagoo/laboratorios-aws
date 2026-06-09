@@ -4,20 +4,27 @@
   <meta charset="UTF-8">
   <title>Documentación de Laboratorios AWS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <div id="app">Cargando...</div>
 
-  <script src="config.js"></script>
+  <script>
+    window.$docsify = {
+      loadSidebar: true,     
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      subMaxLevel: 0         
+    }
+  </script>
   
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
   
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
 </body>
 </html>
