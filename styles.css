@@ -4,7 +4,6 @@
   --pink-color: #eee0cc;
   --grey-color: #f1e7e7;
   --pastel-pink: #ebd6fb;    
-  --purple-color: #e15fed;
   --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
@@ -58,12 +57,12 @@ body, .content {
 
 /* 6. Bloques de texto (Código y Citas) */
 code {
-  color: var(--purple-color) !important; 
+  color: var(--pastel-pink) !important; 
   font-weight: 800 !important; 
 }
 
 blockquote {
-  border-left: 4px solid var(--purple-color) !important;
+  border-left: 4px solid var(--pastel-pink) !important;
   padding: 10px 20px !important;      
   margin: 1em 0 !important;           
 }
