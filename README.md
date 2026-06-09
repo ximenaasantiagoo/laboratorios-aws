@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffc0cb,100:b19cd9&height=180&section=header&text=Documentación%20de%20Laboratorios%20AWS&fontSize=24&fontColor=ffffff&fontAlignY=45&desc=Ximena%20Alexandra%20Santiago%20Ordoñez&descAlignY=72&descSize=14&descColor=ffffff" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:121214,50:008080,100:e91e63&height=180&section=header&text=Documentación%20de%20Laboratorios%20AWS&fontSize=24&fontColor=ffffff&fontAlignY=45&desc=Ximena%20Alexandra%20Santiago%20Ordoñez&descAlignY=72&descSize=14&descColor=ffffff" width="100%"/>
 
 En este espacio documentaré de manera detallada el desarrollo, la arquitectura y los aprendizajes clave de cada laboratorio realizado durante el bootcamp.
 
