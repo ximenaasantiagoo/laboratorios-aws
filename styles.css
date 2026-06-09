@@ -52,7 +52,6 @@ code {
 
 blockquote {
   border-left: 4px solid var(--pastel-pink) !important;
-  display: inline-block !important;   
   padding: 10px 20px !important;      
   margin: 1em 0 !important;           
 }
