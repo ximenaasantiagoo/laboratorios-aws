@@ -1,4 +1,4 @@
-# <span style="color: #f3b4dd !important;">Lab: Introducción a Amazon EC2</span>
+# Lab: Introducción a Amazon EC2
 
 
 >  `Amazon EC2` `Máquina Virtual` `AWS`
