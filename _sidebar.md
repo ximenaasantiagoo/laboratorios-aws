@@ -4,3 +4,6 @@
 - **Linux**
   - [Laboratorio 2](laboratorios/lab2.md)
   - [Laboratorio 3](laboratorios/lab3.md)
+- **Redes**
+- **Seguridad**
+- **Bases de Datos**
