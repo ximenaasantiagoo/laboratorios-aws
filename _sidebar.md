@@ -1,3 +1,4 @@
+- * [Inicio](/)
 - **Laboratorio 1**
   - [Introducción a Amazon EC2](laboratorios/lab1.md)
 - **Laboratorio 2**
