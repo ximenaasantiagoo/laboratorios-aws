@@ -20,9 +20,16 @@ body, .content {
   border-right: 1px solid #202024 !important;
 }
 
-/* 4. Títulos y Nombre de la App */
-#main h1, #main h2, #main h3, #main h4 {
+/* 4. Títulos y Subtítulos */
+#main h1 {
   color: var(--theme-color) !important;
+  font-weight: 800 !important;         
+  letter-spacing: -0.02em !important;   
+}
+
+#main h2, #main h3, #main h4 {
+  color: var(--theme-color) !important;
+  font-weight: 500 !important;         
 }
 
 .sidebar .app-name {
