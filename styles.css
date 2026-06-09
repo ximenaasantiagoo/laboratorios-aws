@@ -55,26 +55,29 @@ body, .content {
   text-decoration: underline;
 }
 
-.sidebar-nav ul .collapse,
-.sidebar-nav ul .app-sub-sidebar,
-.sidebar-nav ul li:not(.open) > ul {
-  display: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 0 !important;
-}
-
 .sidebar-nav > ul > li {
   margin-top: 0 !important;
-  margin-bottom: -15px !important; 
+  margin-bottom: 0 !important; 
   padding-bottom: 0 !important;
 }
 
 .sidebar ul li strong {
   display: block !important;
-  padding-top: 10px !important;     
-  padding-bottom: 2px !important;    
+  padding-top: 10px !important;   
+  padding-bottom: 4px !important;   
   margin-bottom: 0 !important;
+}
+
+.sidebar-nav ul li.collapse {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+}
+
+.sidebar ul li ul {
+  padding-left: 15px !important;
+  margin-top: 2px !important;
+  margin-bottom: 8px !important; 
 }
 
 /* 6. Bloques de texto (Código y Citas) */
