@@ -2,7 +2,7 @@
 :root {
   --theme-color: #ff2a85;       
   --pastel-pink: #f3b4dd;       
-  --font-base: Arial, Helvetica, sans-serif;
+  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 /* 2. Al aplicarla al body, la heredan los títulos y menús de forma automática */
@@ -45,12 +45,6 @@ body, .content {
 /* 6. Bloques de texto (Código y Citas) */
 code {
   color: var(--pastel-pink) !important; 
-  background-color: #1e2124 !important; 
-  padding: 3px 6px !important;          
-  border-radius: 4px !important;
-
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace !important;
-  font-size: 0.875em !important;         
 }
 
 blockquote {
