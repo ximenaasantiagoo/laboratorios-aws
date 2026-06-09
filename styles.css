@@ -22,7 +22,7 @@ body, .content {
 
 /* 4. Títulos y Nombre de la App */
 #main h1, #main h2, #main h3, #main h4 {
-  color: var(--pastel-pink) !important;
+  color: var(--theme-color) !important;
 }
 
 .sidebar .app-name {
