@@ -4,10 +4,11 @@
   --theme-color: #ff2a85;         /* Rosa vibrante para el menú activo y enlaces */
   --pastel-pink: #f3b4dd;         /* Rosa pastel para bloques de código */
   
-  /* Variables nativas que el nuevo tema lee en automático */
-  --base-background: #0d0d0f;     /* Fondo general de la página */
-  --sidebar-background: #141416;  /* Fondo de la barra lateral */
+  /* VARIABLES CORREGIDAS: Forzar negro absoluto (#0d0d0f) */
+  --base-background: #0d0d0f;     /* Fondo general de la página (Negro Puro) */
+  --sidebar-background: #0d0d0f;  /* Fondo de la barra lateral (Negro Puro) */
   --sidebar-border-color: #202024;/* Línea divisoria del menú lateral */
+  --content-max-width: 65em;      /* Optimiza el ancho de lectura */
   
   /* Colores del Texto, Títulos y Enlaces */
   --heading-color: #ff2a85;       /* Todos los títulos (h1, h2, h3, h4) en rosa */
@@ -23,7 +24,12 @@
   --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-/* 2. Personalización específica para el Menú Lateral */
+/* 2. Parche de seguridad para asegurar el fondo negro en el cuerpo */
+body, .content, main {
+  background-color: #0d0d0f !important;
+}
+
+/* 3. Personalización específica para el Menú Lateral */
 .sidebar ul li strong {
   color: #00cbd6 !important;     /* Tus títulos de secciones de Laboratorios en Turquesa */
 }
@@ -34,12 +40,12 @@
   text-decoration: underline;
 }
 
-/* 3. Estilos específicos para bloques de código */
+/* 4. Estilos específicos para bloques de código */
 code {
   color: var(--pastel-pink) !important;
 }
 
-/* 4. Elementos divisores */
+/* 5. Elementos divisores */
 .content hr {
   border: none;
   background: rgba(255, 255, 255, 0.15) !important;
