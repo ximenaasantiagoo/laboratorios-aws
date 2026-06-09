@@ -45,9 +45,6 @@ body, .content {
   text-decoration: underline;
 }
 
-
-
-
 /* 6. Bloques de texto (Código y Citas) */
 code {
   color: var(--pastel-pink) !important; 
@@ -55,6 +52,9 @@ code {
 
 blockquote {
   border-left: 4px solid var(--pastel-pink) !important;
+  display: inline-block !important;   
+  padding: 10px 20px !important;      
+  margin: 1em 0 !important;           
 }
 
 /* 7. Elementos divisores y limpieza de enlaces en títulos */
