@@ -1,22 +1,22 @@
 /* 1. Variables globales */
 :root {
-  --theme-color: #ff2a85;       
-  --pastel-pink: #f3b4dd;      
+  --theme-color: #ff2a85;       /* Rosa vibrante */
+  --pastel-pink: #f3b4dd;       /* Rosa pastel para código y citas */
   --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-/* 2. Tipografía base */
+/* 2. Al aplicarla al body, la heredan los títulos y menús de forma automática */
 body {
   font-family: var(--font-base);
 }
 
-/* 3. Fondos y diseño general (Negro Puro) */
-body, .content, main, .markdown-section {
+/* 3. Fondos y diseño general */
+body, .content {
   background-color: #0d0d0f !important; 
 }
 
 .sidebar {
-  background-color: #0d0d0f !important; /* Mismo fondo negro para la barra lateral */
+  background-color: #141416 !important;
   border-right: 1px solid #202024 !important;
 }
 
@@ -28,18 +28,17 @@ body, .content, main, .markdown-section {
   font-weight: bold;
 }
 
-/* 5. Menú Lateral (Tus viñetas y lista original intactas) */
+/* 5. Menú Lateral */
 .sidebar ul li a {
   color: #daf0f4 !important;
 }
 
 .sidebar ul li strong {
-  color: #00cbd6 !important;     /* Secciones de laboratorios en tu turquesa original */
+  color: #00cbd6 !important; 
 }
 
-.sidebar ul li.active > a, 
-.sidebar ul li a:hover {
-  color: #fbf2f2 !important;     /* Color claro al pasar el cursor o estar activo */
+.sidebar ul li.active > a, .sidebar ul li a:hover {
+  color: #fbf2f2 !important; 
   text-decoration: underline;
 }
 
@@ -50,18 +49,15 @@ code {
 
 blockquote {
   border-left: 4px solid var(--pastel-pink) !important;
-  background-color: #141416 !important;
 }
 
-/* 7. Elementos divisores y limpieza de enlaces */
+/* 7. Elementos divisores y limpieza de enlaces en títulos */
 .content hr {
   border: none;
   background: rgba(255, 255, 255, 0.15) !important;
   height: 1px;
 }
 
-.markdown-section h1 a, 
-.markdown-section h2 a, 
-.markdown-section h3 a {
+.markdown-section h1 a, .markdown-section h2 a, .markdown-section h3 a {
   text-decoration: none !important;
 }
