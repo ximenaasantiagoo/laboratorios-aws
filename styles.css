@@ -2,7 +2,7 @@
 :root {
   --theme-color: #ff2a85;       
   --pastel-pink: #f3b4dd;       
-  --font-base: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  --font-base: Arial, Helvetica, sans-serif;
 }
 
 /* 2. Al aplicarla al body, la heredan los títulos y menús de forma automática */
