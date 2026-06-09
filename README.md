@@ -10,6 +10,3 @@ A lo largo de este entrenamiento, el enfoque principal estará en:
 * Automatizar tareas mediante el uso de terminal y sistemas basados en Linux.
 * Comprender y aplicar los fundamentos de redes y control de accesos en entornos AWS.
 
----
-
-*Usa el menú de la barra lateral para navegar a través de los diferentes laboratorios realizados.*
