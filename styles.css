@@ -55,6 +55,22 @@ body, .content {
   text-decoration: underline;
 }
 
+.sidebar ul, .sidebar ul li {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.sidebar ul li strong {
+  display: block !important;
+  padding-top: 15px !important;    
+  padding-bottom: 8px !important;  
+}
+
+.sidebar-nav > ul > li {
+  margin-bottom: 5px !important;  
+}
+
 /* 6. Bloques de texto (Código y Citas) */
 code {
   color: var(--pastel-pink) !important; 
