@@ -18,14 +18,22 @@
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
       },
-      subMaxLevel: 0         
+      subMaxLevel: 0, 
+      
+      search: {
+        maxAge: 86400000,              
+        paths: 'auto',                 
+        placeholder: 'Buscar laboratorio...', 
+        noData: 'No se encontraron resultados', 
+        depth: 3                     
+      }
     }
   </script>
   
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-  
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 
 </body>
 </html>
