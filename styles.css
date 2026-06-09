@@ -1,37 +1,40 @@
-/* 1. Variables globales optimizadas para Docsify Themeable */
+/* 1. Variables globales */
 :root {
-  /* Tus colores base originales */
-  --theme-color: #ff2a85;         /* Rosa vibrante para el menú activo y enlaces */
-  --pastel-pink: #f3b4dd;         /* Rosa pastel para bloques de código */
-  
-  /* VARIABLES CORREGIDAS: Forzar negro absoluto (#0d0d0f) */
-  --base-background: #0d0d0f;     /* Fondo general de la página (Negro Puro) */
-  --sidebar-background: #0d0d0f;  /* Fondo de la barra lateral (Negro Puro) */
-  --sidebar-border-color: #202024;/* Línea divisoria del menú lateral */
-  --content-max-width: 65em;      /* Optimiza el ancho de lectura */
-  
-  /* Colores del Texto, Títulos y Enlaces */
-  --heading-color: #ff2a85;       /* Todos los títulos (h1, h2, h3, h4) en rosa */
-  --base-color: #daf0f4;          /* Texto base en blanco azulado suave */
-  --link-color: #ff2a85;          /* Enlaces del contenido en rosa */
-  --link-color--hover: #fbf2f2;    /* Hover de enlaces */
-  
-  /* Configuración de Bloques de Citas (Blockquotes) */
-  --blockquote-background: #141416;
-  --blockquote-border-color: #f3b4dd; /* Tu rosa pastel en el borde izquierdo */
-  
-  /* Tipografía */
+  --theme-color: #ff2a85;       
+  --pastel-pink: #f3b4dd;      
   --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-/* 2. Parche de seguridad para asegurar el fondo negro en el cuerpo */
-body, .content, main {
-  background-color: #0d0d0f !important;
+/* 2. Tipografía base */
+body {
+  font-family: var(--font-base);
 }
 
-/* 3. Personalización específica para el Menú Lateral */
+/* 3. Fondos y diseño general (Negro Puro) */
+body, .content, main, .markdown-section {
+  background-color: #0d0d0f !important; 
+}
+
+.sidebar {
+  background-color: #0d0d0f !important; /* Mismo fondo negro para la barra lateral */
+  border-right: 1px solid #202024 !important;
+}
+
+/* 4. Títulos y Nombre de la App */
+#main h1, #main h2, #main h3, #main h4, .sidebar .app-name {
+  color: var(--theme-color) !important;
+}
+.sidebar .app-name {
+  font-weight: bold;
+}
+
+/* 5. Menú Lateral (Tus viñetas y lista original intactas) */
+.sidebar ul li a {
+  color: #daf0f4 !important;
+}
+
 .sidebar ul li strong {
-  color: #00cbd6 !important;     /* Tus títulos de secciones de Laboratorios en Turquesa */
+  color: #00cbd6 !important;     /* Secciones de laboratorios en tu turquesa original */
 }
 
 .sidebar ul li.active > a, 
@@ -40,12 +43,17 @@ body, .content, main {
   text-decoration: underline;
 }
 
-/* 4. Estilos específicos para bloques de código */
+/* 6. Bloques de texto (Código y Citas) */
 code {
-  color: var(--pastel-pink) !important;
+  color: var(--pastel-pink) !important; 
 }
 
-/* 5. Elementos divisores */
+blockquote {
+  border-left: 4px solid var(--pastel-pink) !important;
+  background-color: #141416 !important;
+}
+
+/* 7. Elementos divisores y limpieza de enlaces */
 .content hr {
   border: none;
   background: rgba(255, 255, 255, 0.15) !important;
