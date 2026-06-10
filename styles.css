@@ -137,7 +137,7 @@ blockquote {
   border-radius: 12px !important;            
   margin-left: 8px;                           
   vertical-align: middle; 
-  font-family: 'Courier New', Courier, monospace !important;
+  font-family: 'Inter', 'Montserrat', sans-serif !important;
   letter-spacing: 0.5px;
 }
 
