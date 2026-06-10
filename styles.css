@@ -99,18 +99,19 @@ body, .content {
   margin-bottom: 8px !important; 
 }
 
-/* 6. Bloques de texto (Código y Citas con acento Rosa) */
+/* 6. Bloques de texto  */
 code {
   background-color: #1e293b !important; 
   color: var(--accent-pink) !important; 
-  padding: 3px 6px !important;
-  border-radius: 4px !important;
-  font-family: 'Courier New', Courier, monospace !important;
-  font-size: 0.9em !important;
-  font-weight: 600 !important; 
+  font-size: 12px !important;                 
+  font-weight: 500 !important;                
+  padding: 4px 12px !important;               
+  border-radius: 12px !important;           
+  border: 1px solid rgba(244, 114, 182, 0.15) !important; 
+  font-family: Arial, sans-serif !important;
+  letter-spacing: 0.2px !important;
 }
 
-/* Ajuste opcional para bloques de código grandes (pre) si los usas */
 pre {
   background-color: #1e293b !important;
   border: 1px solid #243249 !important;
@@ -130,7 +131,7 @@ blockquote {
   display: inline-block;
   font-size: 12px !important;                 
   font-weight: 500 !important;                
-  color: var(--accent-pink) !important;      
+  color: var(--accent-pink) !important;       
   background-color: rgba(244, 114, 182, 0.1) !important; 
   border: 1px solid rgba(244, 114, 182, 0.15) !important;
   padding: 4px 12px !important;               
@@ -138,11 +139,6 @@ blockquote {
   margin-left: 8px;                           
   vertical-align: middle;                     
   font-family: Arial, sans-serif !important;
-}
-
-
-  
-  /* EL TRUCO SECRETO: Separación sutil de caracteres para que se vea igual de aireada */
   letter-spacing: 0.2px !important;
 }
 
