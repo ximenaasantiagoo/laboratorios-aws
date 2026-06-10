@@ -6,6 +6,10 @@
   - [Laboratorio 3](laboratorios/lab3.md)
   - [Laboratorio 4](laboratorios/lab4.md)
   - [Laboratorio 5](laboratorios/lab5.md)
+  - [Laboratorio 6](laboratorios/lab6.md)
+  - [Laboratorio 7](laboratorios/lab7.md)
+  - [Laboratorio 8](laboratorios/lab8.md)
+  - [Laboratorio 9](laboratorios/lab9.md)
 - **Redes**
 - **Seguridad**
 - **Bases de Datos**
