@@ -24,18 +24,20 @@ body, .content {
   border-right: 1px solid #243249 !important; 
 }
 
-/* 4. Títulos y Subtítulos (Corregidos con Rosa en H1 y Blanco en Subtítulos con Negritas) */
+/* 4. Títulos y Subtítulos (Versión Reforzada para Docsify) */
 #main h1,
-.markdown-section h1 {
-  color: var(--accent-pink) !important;   
-  font-weight: 800 !important;          
+.markdown-section h1,
+.markdown-section h1 span {
+  color: var(--accent-pink) !important;  
+  font-weight: 800 !important;
   letter-spacing: -0.02em !important;   
 }
 
 #main h2, #main h3, #main h4,
-.markdown-section h2, .markdown-section h3, .markdown-section h4 {
-  color: #ffffff !important;             
-  font-weight: 800 !important;           
+.markdown-section h2, .markdown-section h3, .markdown-section h4,
+.markdown-section h2 span, .markdown-section h3 span, .markdown-section h4 span {
+  color: #ffffff !important;            
+  font-weight: 800 !important;
 }
 
 .sidebar .app-name {
