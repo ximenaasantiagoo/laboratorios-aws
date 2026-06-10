@@ -1,15 +1,15 @@
 * [Inicio](/)
 - **Fundamentos de la Nube**
-  - [Laboratorio 1](laboratorios/lab1.md)
+  - [Laboratorio 1](laboratorios/fundamentos/lab1.md)
 - **Linux**
-  - [Laboratorio 2](laboratorios/lab2.md)
-  - [Laboratorio 3](laboratorios/lab3.md)
-  - [Laboratorio 4](laboratorios/lab4.md)
-  - [Laboratorio 5](laboratorios/lab5.md)
-  - [Laboratorio 6](laboratorios/lab6.md)
-  - [Laboratorio 7](laboratorios/lab7.md)
-  - [Laboratorio 8](laboratorios/lab8.md)
-  - [Laboratorio 9](laboratorios/lab9.md)
+  - [Laboratorio 2](laboratorios/linux/lab2.md)
+  - [Laboratorio 3](laboratorios/linux/lab3.md)
+  - [Laboratorio 4](laboratorios/linux/lab4.md)
+  - [Laboratorio 5](laboratorios/linux/lab5.md)
+  - [Laboratorio 6](laboratorios/linux/lab6.md)
+  - [Laboratorio 7](laboratorios/linux/lab7.md)
+  - [Laboratorio 8](laboratorios/linux/lab8.md)
+  - [Laboratorio 9](laboratorios/linux/lab9.md)
 - **Redes**
 - **Seguridad**
 - **Bases de Datos**
