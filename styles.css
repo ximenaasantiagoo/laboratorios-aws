@@ -137,7 +137,13 @@ blockquote {
   border-radius: 12px !important;             
   margin-left: 8px;                           
   vertical-align: middle;                     
-  font-family: Arial, "Segoe UI", -apple-system, sans-serif !important;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
+}
+
+
+  
+  /* EL TRUCO SECRETO: Separación sutil de caracteres para que se vea igual de aireada */
+  letter-spacing: 0.2px !important;
 }
 
 /* 7. Elementos divisores y limpieza de enlaces en títulos */
