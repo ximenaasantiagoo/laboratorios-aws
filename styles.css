@@ -1,58 +1,66 @@
-/* 1. Variables globales */
+/* 1. Variables globales unificadas con la paleta tecnológica */
 :root {
-  --theme-color: #ff3e9b;  
-  --pink-color: #eee0cc;
-  --grey-color: #f1e7e7;
-  --pastel-pink: #ebd6fb;    
-  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --theme-color: #2dd4bf;      /* Turquesa brillante para acentos principales y links */
+  --accent-pink: #f472b6;      /* Rosa pastel para bloques destacados y código */
+  --grey-color: #f1f5f9;       /* Blanco suave/Gris muy claro para títulos h2-h4 */
+  --body-text: #cbd5e1;        /* Gris medio */
+  --font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* 2. Al aplicarla al body, la heredan los títulos y menús de forma automática */
+/* 2. Aplicación de la tipografía limpia al body y herencia general */
 body {
   font-family: var(--font-base);
+  color: var(--body-text);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* 3. Fondos y diseño general */
+/* 3. Fondos y diseño general  */
 body, .content {
-  background-color: #0d0d0f !important; 
+  background-color: #0f172a !important; 
 }
 
 .sidebar {
-  background-color: #141416 !important;
-  border-right: 1px solid #202024 !important;
+  background-color: #161e2e !important; 
+  border-right: 1px solid #243249 !important; 
 }
 
-/* 4. Títulos y Subtítulos */
+/* 4. Títulos y Subtítulos con los nuevos contrastes */
 #main h1 {
-  color: var(--theme-color) !important;
-  font-weight: 800 !important;         
+  color: #f8fafc !important;           
+  font-weight: 700 !important;         
   letter-spacing: -0.02em !important;   
 }
 
 #main h2, #main h3, #main h4 {
-  color: var(--grey-color) !important;
-  font-weight: 800 !important;         
+  color: var(--grey-color) !important; 
+  font-weight: 600 !important;         
 }
 
 .sidebar .app-name {
-  font-weight: bold;
+  font-weight: 700;
+  color: #f8fafc !important;           
 }
 
-/* 5. Menú Lateral */
+/* 5. Menú Lateral Organizado */
 .sidebar ul li a {
-  color: #daf0f4 !important;
+  color: #94a3b8 !important;           
   white-space: normal !important;      
   word-wrap: break-word !important;     
   line-height: 1.4 !important;
+  font-size: 10pt;
 }
 
 .sidebar ul li strong {
-  color: #00cbd6 !important; 
+  color: var(--theme-color) !important; 
+  font-size: 10.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .sidebar ul li.active > a, .sidebar ul li a:hover {
-  color: #fbf2f2 !important; 
-  text-decoration: underline;
+  color: #f8fafc !important;           
+  font-weight: 500;
+  text-decoration: none !important;    
 }
 
 .sidebar-nav > ul > li {
@@ -63,8 +71,8 @@ body, .content {
 
 .sidebar ul li strong {
   display: block !important;
-  padding-top: 10px !important;   
-  padding-bottom: 4px !important;   
+  padding-top: 12px !important;   
+  padding-bottom: 6px !important;   
   margin-bottom: 0 !important;
 }
 
@@ -80,25 +88,52 @@ body, .content {
   margin-bottom: 8px !important; 
 }
 
-/* 6. Bloques de texto (Código y Citas) */
+/* 6. Bloques de texto (Código y Citas con acento Rosa) */
 code {
-  color: var(--pastel-pink) !important; 
-  font-weight: 800 !important; 
+  background-color: #1e293b !important; 
+  color: var(--accent-pink) !important; 
+  padding: 3px 6px !important;
+  border-radius: 4px !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 0.9em !important;
+  font-weight: 600 !important; 
+}
+
+/* Ajuste opcional para bloques de código grandes (pre) si los usas */
+pre {
+  background-color: #1e293b !important;
+  border: 1px solid #243249 !important;
+  border-radius: 6px !important;
 }
 
 blockquote {
-  border-left: 4px solid var(--pastel-pink) !important;
-  padding: 10px 20px !important;      
-  margin: 1em 0 !important;           
+  background-color: #1e293b !important; 
+  border-left: 4px solid var(--accent-pink) !important;
+  color: #94a3b8 !important;
+  padding: 12px 20px !important;      
+  margin: 1.5em 0 !important;            
+  border-radius: 0 6px 6px 0;
 }
 
 /* 7. Elementos divisores y limpieza de enlaces en títulos */
 .content hr {
   border: none;
-  background: rgba(255, 255, 255, 0.15) !important;
+  background: #243249 !important;       /* Separadores acoplados al borde de la interfaz */
   height: 1px;
+  margin: 2em 0;
 }
 
 .markdown-section h1 a, .markdown-section h2 a, .markdown-section h3 a {
   text-decoration: none !important;
+}
+
+/* Ajuste adicional: Estilo para enlaces dentro del contenido markdown */
+.markdown-section a:not(h1):not(h2):not(h3) {
+  color: var(--theme-color) !important; 
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.markdown-section a:not(h1):not(h2):not(h3):hover {
+  text-decoration: underline;
 }
