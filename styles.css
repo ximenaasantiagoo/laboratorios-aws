@@ -1,8 +1,8 @@
 /* 1. Variables globales unificadas con la paleta tecnológica */
 :root {
-  --theme-color: #2dd4bf;      /* Turquesa brillante para acentos principales y links */
-  --accent-pink: #f472b6;      /* Rosa pastel para bloques destacados y código */
-  --grey-color: #f1f5f9;       /* Blanco suave/Gris muy claro para otros textos */
+  --theme-color: #2dd4bf;      /* Turquesa*/
+  --accent-pink: #f472b6;      /* Rosa pastel */
+  --grey-color: #f1f5f9;       /* Blanco medio */
   --body-text: #cbd5e1;        /* Gris medio */
   --font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
