@@ -1,1 +1,1 @@
-# Administración de permisos de archivos
+# Lab: Administración de permisos de archivos
