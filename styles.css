@@ -26,7 +26,7 @@ body, .content {
 
 /* 4. Títulos y Subtítulos con los nuevos contrastes */
 #main h1 {
-  color: #ffffff !important;           
+  color: var(-- accent-pink:) !important;           
   font-weight: 800 !important;         
   letter-spacing: -0.02em !important;   
 }
