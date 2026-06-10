@@ -1,53 +1,51 @@
-/* 1. Variables globales unificadas con la paleta tecnológica */
+/* Variables globales y configuración base */
 :root {
-  --theme-color: #2dd4bf;      /* Turquesa*/
+  --theme-color: #2dd4bf;      /* Turquesa */
   --accent-pink: #f472b6;      /* Rosa pastel */
   --grey-color: #f1f5f9;       /* Blanco medio */
   --body-text: #cbd5e1;        /* Gris medio */
   --font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --bg-dark: #0f172a;
+  --bg-card: #1e293b;
+  --border-color: #243249;
 }
 
-/* 2. Aplicación de la tipografía limpia al body y herencia general */
 body {
   font-family: var(--font-base);
   color: var(--body-text);
   -webkit-font-smoothing: antialiased;
 }
 
-/* 3. Fondos y diseño general  */
+/* Fondos y diseño general */
 body, .content {
-  background-color: #0f172a !important; 
+  background-color: var(--bg-dark) !important; 
 }
 
 .sidebar {
   background-color: #161e2e !important; 
-  border-right: 1px solid #243249 !important; 
+  border-right: 1px solid var(--border-color) !important; 
 }
 
-/* 4. Títulos y Subtítulos (Versión Reforzada para Docsify) */
-#main h1,
-.markdown-section h1,
-.markdown-section h1 span {
+/* Títulos y Subtítulos */
+.markdown-section h1, 
+.markdown-section h1 span, 
+#main h1 {
   color: var(--accent-pink) !important;  
   font-weight: 800 !important;
   letter-spacing: -0.02em !important;   
 }
 
-#main h2, #main h3, #main h4,
 .markdown-section h2, .markdown-section h3, .markdown-section h4,
-.markdown-section h2 span, .markdown-section h3 span, .markdown-section h4 span {
+.markdown-section h2 span, .markdown-section h3 span, .markdown-section h4 span,
+#main h2, #main h3, #main h4,
+.sidebar .app-name {
   color: #ffffff !important;            
   font-weight: 800 !important;
 }
 
-.sidebar .app-name {
-  font-weight: 800;
-  color: #ffffff !important;           
-}
-
-/* 5. Menú Lateral Organizado */
+/* Menú Lateral */
 .sidebar ul li a {
-  color: #94a3b8 !important;           
+  color: #94a3b8 !important;            
   white-space: normal !important;      
   word-wrap: break-word !important;     
   line-height: 1.4 !important;
@@ -55,71 +53,70 @@ body, .content {
 }
 
 .sidebar ul li strong {
+  display: block !important;
   color: var(--theme-color) !important; 
   font-size: 10.5pt;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  padding: 12px 0 6px 0 !important;   
+  margin-bottom: 0 !important;
 }
 
 .sidebar ul li.active > a {
-  color: #f8fafc !important;           
+  color: #f8fafc !important;            
   font-weight: 600 !important;
   text-decoration: none !important;    
-  border-right: 3px solid var(--accent-pink) !important; /* ¡Aquí pintamos la barrita de rosa! */
+  border-right: 3px solid var(--accent-pink) !important;
 }
 
 .sidebar ul li a:hover {
-  color: #f8fafc !important;           
+  color: #f8fafc !important;            
   font-weight: 500;
   text-decoration: none !important;    
 }
 
-.sidebar-nav > ul > li {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important; 
-  padding-bottom: 0 !important;
-}
-
-.sidebar ul li strong {
-  display: block !important;
-  padding-top: 12px !important;   
-  padding-bottom: 6px !important;   
-  margin-bottom: 0 !important;
-}
-
+.sidebar-nav > ul > li,
 .sidebar-nav ul li.collapse {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
   padding: 0 !important;
 }
 
 .sidebar ul li ul {
   padding-left: 15px !important;
-  margin-top: 2px !important;
-  margin-bottom: 8px !important; 
+  margin: 2px 0 8px 0 !important; 
 }
 
-/* 6. Bloques de texto  */
-code {
-  background-color: #1e293b !important; 
-  color: var(--accent-pink) !important; 
-  font-size: 12px !important;                 
+/* Bloques de texto y Componentes compartidos */
+code, .badge-pink {
+  display: inline-block;
+  font-size: 12px !important;                
   font-weight: 500 !important;                
-  padding: 4px 12px !important;               
-  border-radius: 12px !important;           
-  border: 1px solid rgba(244, 114, 182, 0.15) !important; 
+  color: var(--accent-pink) !important;       
+  background-color: rgba(244, 114, 182, 0.1) !important; 
+  border: 1px solid rgba(244, 114, 182, 0.15) !important;
+  padding: 4px 12px !important;              
+  border-radius: 12px !important;            
   font-family: Arial, sans-serif !important;
   letter-spacing: 0.2px !important;
 }
 
+code {
+  background-color: var(--bg-card) !important; 
+}
+
+.badge-pink {
+  margin-left: 8px;                                     
+  vertical-align: middle;                                     
+}
+
 pre {
-  background-color: #1e293b !important;
-  border: 1px solid #243249 !important;
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
   border-radius: 6px !important;
 }
 
 blockquote {
-  background-color: #1e293b !important; 
+  background-color: var(--bg-card) !important; 
   border-left: 4px solid var(--accent-pink) !important;
   color: #94a3b8 !important;
   padding: 12px 20px !important;      
@@ -127,37 +124,23 @@ blockquote {
   border-radius: 0 6px 6px 0;
 }
 
-.badge-pink {
-  display: inline-block;
-  font-size: 12px !important;                 
-  font-weight: 500 !important;                
-  color: var(--accent-pink) !important;       
-  background-color: rgba(244, 114, 182, 0.1) !important; 
-  border: 1px solid rgba(244, 114, 182, 0.15) !important;
-  padding: 4px 12px !important;               
-  border-radius: 12px !important;             
-  margin-left: 8px;                           
-  vertical-align: middle;                     
-  font-family: Arial, sans-serif !important;
-  letter-spacing: 0.2px !important;
-}
-
-/* 7. Elementos divisores y limpieza de enlaces en títulos */
+/* Elementos divisores y Enlaces */
 .content hr {
   border: none;
-  background: #243249 !important;       
+  background: var(--border-color) !important;      
   height: 1px;
   margin: 2em 0;
 }
 
-.markdown-section h1 a, .markdown-section h2 a, .markdown-section h3 a {
-  text-decoration: none !important;
+.markdown-section h1 a, 
+.markdown-section h2 a, 
+.markdown-section h3 a,
+.markdown-section a:not(h1):not(h2):not(h3) {
+  text-decoration: none;
 }
 
-/* Ajuste adicional: Estilo para enlaces dentro del contenido markdown */
 .markdown-section a:not(h1):not(h2):not(h3) {
   color: var(--theme-color) !important; 
-  text-decoration: none;
   font-weight: 500;
 }
 
