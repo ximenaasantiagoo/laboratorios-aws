@@ -128,19 +128,17 @@ blockquote {
 
 .badge-pink {
   display: inline-block;
-  font-size: 11px !important;                 
-  font-weight: 600 !important;                
-  color: var(--accent-pink) !important;       
+  font-size: 12px !important;                 
+  font-weight: 500 !important;                
+  color: var(--accent-pink) !important;      
   background-color: rgba(244, 114, 182, 0.1) !important; 
-  border: 1px solid rgba(244, 114, 182, 0.2) !important; 
-  padding: 4px 10px !important;               
-  border-radius: 12px !important;            
+  border: 1px solid rgba(244, 114, 182, 0.15) !important;
+  padding: 4px 12px !important;               
+  border-radius: 12px !important;             
   margin-left: 8px;                           
-  vertical-align: middle; 
-  font-family: 'Inter', 'Montserrat', sans-serif !important;
-  letter-spacing: 0.5px;
+  vertical-align: middle;                     
+  font-family: Arial, "Segoe UI", -apple-system, sans-serif !important;
 }
-
 
 /* 7. Elementos divisores y limpieza de enlaces en títulos */
 .content hr {
