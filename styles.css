@@ -2,7 +2,7 @@
 :root {
   --theme-color: #2dd4bf;      /* Turquesa brillante para acentos principales y links */
   --accent-pink: #f472b6;      /* Rosa pastel para bloques destacados y código */
-  --grey-color: #f1f5f9;       /* Blanco suave/Gris muy claro para títulos h2-h4 */
+  --grey-color: #f1f5f9;       /* Blanco suave/Gris muy claro para otros textos */
   --body-text: #cbd5e1;        /* Gris medio */
   --font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -24,16 +24,18 @@ body, .content {
   border-right: 1px solid #243249 !important; 
 }
 
-/* 4. Títulos y Subtítulos con los nuevos contrastes */
-#main h1 {
-  color: var(-- accent-pink:) !important;           
-  font-weight: 800 !important;         
+/* 4. Títulos y Subtítulos (Corregidos con Rosa en H1 y Blanco en Subtítulos con Negritas) */
+#main h1,
+.markdown-section h1 {
+  color: var(--accent-pink) !important;   
+  font-weight: 800 !important;          
   letter-spacing: -0.02em !important;   
 }
 
-#main h2, #main h3, #main h4 {
-  color: #ffffff !important;          
-  font-weight: 800 !important;        
+#main h2, #main h3, #main h4,
+.markdown-section h2, .markdown-section h3, .markdown-section h4 {
+  color: #ffffff !important;             
+  font-weight: 800 !important;           
 }
 
 .sidebar .app-name {
@@ -118,7 +120,7 @@ blockquote {
 /* 7. Elementos divisores y limpieza de enlaces en títulos */
 .content hr {
   border: none;
-  background: #243249 !important;       /* Separadores acoplados al borde de la interfaz */
+  background: #243249 !important;       
   height: 1px;
   margin: 2em 0;
 }
