@@ -26,19 +26,19 @@ body, .content {
 
 /* 4. Títulos y Subtítulos con los nuevos contrastes */
 #main h1 {
-  color: #f8fafc !important;           
+  color: ##ffffff !important;           
   font-weight: 800 !important;         
   letter-spacing: -0.02em !important;   
 }
 
 #main h2, #main h3, #main h4 {
-  color: #f8fafc !important;          
+  color: #ffffff !important;          
   font-weight: 800 !important;        
 }
 
 .sidebar .app-name {
   font-weight: 800;
-  color: #f8fafc !important;           
+  color: #ffffff !important;           
 }
 
 /* 5. Menú Lateral Organizado */
