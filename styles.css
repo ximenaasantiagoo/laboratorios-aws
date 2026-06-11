@@ -33,6 +33,7 @@ body, .content {
   color: var(--accent-pink) !important;  
   font-weight: 800 !important;
   letter-spacing: -0.02em !important;   
+  text-transform: uppercase !important;
 }
 
 .markdown-section h2, .markdown-section h3, .markdown-section h4,
