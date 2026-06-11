@@ -9,12 +9,18 @@ En la consola de AWS configuré mi instancia con los siguientes datos:
 
 * **Nombre:** Asigné el nombre de `Web Server` para crea una etiqueta de identificación.
 * **Sistema Operativo Amazon Machine Image (AMI):** Seleccioné el sistema operativo base del servidor `Amazon Linux 2023` 
+  
+  ![imagen1](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso1.png?raw=true)
+
 * **Tipo de Instancia:** Elegí la capacidad de hardware del servidor, seleccionando `t3.micro` debido a las restricciones del laboratorio.
 * **Seguridad:** Omití la asignación de claves de acceso `Proceed without a key pair`, ya que en este laboratorio no fue necesario iniciar sesión directamente en el servidor.
 * **Red:**  Asigné la instancia a la red `Lab VPC`, configuré un firewall virtual llamado "Web Server security group" y eliminé la regla Secure Shell (SSH) por defecto con el fin de aumentar la seguridad del servidor.
-* **Almacenamiento:** Mantuve el disco virtual de almacenamiento por defecto que son `8 GiB` de tipo Amazon Elastic Block Store (EBS), el cual funcionará como el volumen raíz (de arranque) para el sistema operativo.
   
-![Consola de AWS - Configuración de la Instancia EC2](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso1.png?raw=true)
+  ![imagen2](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso1.1.png)
+
+* **Almacenamiento:** Mantuve el disco virtual de almacenamiento por defecto que son `8 GiB` de tipo Amazon Elastic Block Store (EBS), el cual funcionará como el volumen raíz (de arranque) para el sistema operativo.
+
+  ![imagen3](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso1.2.png)
 
 ### Paso 2: Configuración de Detalles Avanzados
 En la sección de configuraciones avanzadas de la consola, apliqué los siguientes parámetros:
