@@ -1,16 +1,34 @@
-# LAB: USUARIOS Y GRUPOS
+# Lab: Usuarios y grupos 
 > ### Objetivo:
 > Implementar la gestión de accesos en AWS mediante la creación de usuarios y grupos de IAM, configurando credenciales iniciales y validando los flujos de autenticación al iniciar sesión con cada una de las identidades configuradas.
-### TAREA1. CONECTARSE A LA INSTANCIA EC2 DE AMAZON LINUX MEDIANTE SSH (MAC/LINUX)
-Para obtener las claves de acceso, descargué el archivo de la llave privada seleccionando el botón Download PEM (se guardó como labsuser.pem). Posteriormente copié y guardé la dirección PublicIP que aparece en ese mismo panel. Cerré el panel de detalles haciendo clic en la X.
 
-### TAREA2. CREACIÓN DE USUARIOS LOCALES EN EL SISTEMA
-### Paso 1: Verificación del directorio actual 
-Antes de comenzar, utilicé comando pwd:
+### Paso 1:Conectarse a la instancia EC2 de Amazon Linux mediante SSH (Mac/Linux)
+Para obtener las claves de acceso, descargué el archivo de la llave privada seleccionando el botón Download PEM (se guardó como labsuser.pem). Posteriormente copié y guardé la dirección PublicIP que aparece en ese mismo panel. Cerré el panel de detalles haciendo clic en la `X`. 
 
+### Pase 2: Creación de Usuarios Locales 
+* Antes de comenzar, validé que estuviera en el directorio home del usuario actual ejecutando el comando `pwd`
+* Para registrar al primer usuario (arosalez) y configurar su credencial de acceso inicial, ejecuté secuencialmente los comandos `useradd` y `passwd` con privilegios de superusuario
+* Verifiqué que el usuario se había integrado correctamente al sistema, ejecuté una lectura del archivo `/etc/passwd` aplicando un filtro con `cut` para mostrar únicamente la primera columna correspondiente a los nombres de usuario
+  
+_**Nota:** Al introducir la contraseña por defecto (`P@ssword1234!`), el sistema no muestra caracteres ni asteriscos en la pantalla._
+  
+### Paso 5: Alta de los usuarios restantes
+Repitiendo la estructura de los comandos anteriores (`sudo useradd` y `sudo passwd`), completé el registro individual en el servidor para el resto del personal requerido:
 
+### Paso 6: Confirmación del entorno
+Una vez concluida la configuración de todo el personal, ejecuté nuevamente la consulta filtrada del archivo de usuarios para asegurar que ninguna identidad faltara.
 
+### Paso 7: Creación de grupos en el sistema
+Para organizar a los usuarios según sus departamentos y roles dentro de la organización, los agrupé por su rol de trabajo utilizando el comando `groupadd`. Primero, creé el grupo de ventas para inicializar el flujo, posteriormente, completé el registro del resto de los departamentos requeridos ejecutando el comando para cada uno de ellos
 
+### Paso 8: Verificación de los grupos creados
+Para validar que el sistema operativo registró correctamente los nuevos grupos, realicé una lectura del archivo `/etc/group`
 
+### Paso 9: Asignación de usuarios a sus respectivos grupos
+Con los grupos listos, utilicé el comando `usermod` con `-a -G` para estructurar los accesos basados en el rol de cada empleado.
 
-### TAREA3. CREACIÓN DE USUARIOS LOCALES EN EL SISTEMA
+### Paso 10: Inclusión del usuario administrador (ec2-user)
+Como medida de control y supervisión del laboratorio, añadí al usuario por defecto del sistema (`ec2-user`) a absolutamente todos los grupos creados
+
+### Paso 11: Validación final de membresías
+Para validar que cada usuario estuviera dentro del sector correspondiente, ejecuté una última consulta completa al archivo de configuración de grupos
