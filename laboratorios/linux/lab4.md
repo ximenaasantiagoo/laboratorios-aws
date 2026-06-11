@@ -6,9 +6,9 @@
 Para obtener las claves de acceso, descargué el archivo de la llave privada seleccionando el botón Download PEM (se guardó como labsuser.pem). Posteriormente copié y guardé la dirección PublicIP que aparece en ese mismo panel. Cerré el panel de detalles haciendo clic en la `X`. 
 
 ### Pase 2: Creación de Usuarios Locales 
-* Antes de comenzar, validé que estuviera en el directorio home del usuario actual ejecutando el comando `pwd`
-* Para registrar al primer usuario (arosalez) y configurar su credencial de acceso inicial, ejecuté secuencialmente los comandos `useradd` y `passwd` con privilegios de superusuario
-* Verifiqué que el usuario se había integrado correctamente al sistema, ejecuté una lectura del archivo `/etc/passwd` aplicando un filtro con `cut` para mostrar únicamente la primera columna correspondiente a los nombres de usuario
+  * Antes de comenzar, validé que estuviera en el directorio home del usuario actual ejecutando el comando `pwd`
+  * Para registrar al primer usuario (arosalez) y configurar su credencial de acceso inicial, ejecuté secuencialmente los comandos `useradd` y `passwd` con privilegios de superusuario
+  * Verifiqué que el usuario se había integrado correctamente al sistema, ejecuté una lectura del archivo `/etc/passwd` aplicando un filtro con `cut` para mostrar únicamente la primera columna correspondiente a los       nombres de usuario
   
 _**Nota:** Al introducir la contraseña por defecto (`P@ssword1234!`), el sistema no muestra caracteres ni asteriscos en la pantalla._
   
@@ -32,3 +32,18 @@ Como medida de control y supervisión del laboratorio, añadí al usuario por de
 
 ### Paso 11: Validación final de membresías
 Para validar que cada usuario estuviera dentro del sector correspondiente, ejecuté una última consulta completa al archivo de configuración de grupos
+
+### Paso 12: Cambio de identidad a un usuario nuevo
+  * Para validar el comportamiento del entorno y los permisos de las nuevas cuentas, inicié sesión como el usuario `arosalez` utilizando el comando `su` (switch user)
+  * Al cambiar de identidad, la terminal se actualizó mostrando la estructura `[arosalez@ec2-user]$`. El indicador final confirmó que seguía posicionada dentro del directorio home del usuario administrador original,     lo cual verifiqué ejecutando `pwd`
+
+### Paso 13: Prueba de restricciones de escritura y denegación de permisos
+Intenté crear un archivo vacío llamado `myFile.txt` dentro de este directorio, empleando el comando `touch`. El sistema operativo bloqueó la acción debido a que el usuario `arosalez` no cuenta con permisos de escritura sobre la carpeta personal de `ec2-user`.
+
+### Paso 14: Intento como administrador  (Sudoers)
+  *  Intenté forzar la creación del archivo elevando privilegios mediante el comando `sudo`. Tras ingresar nuevamente la contraseña de la cuenta para confirmar la identidad, la terminal arrojó el siguiente aviso de seguridad:
+  *  El comando falló porque `arosalez` no forma parte del archivo de configuración de sudoers (usuarios autorizados con privilegios raíz), lo que provocó que el sistema operativo bloqueara la instrucción y generara una alerta interna.
+
+### Paso 15: Visualización de bitácoras (Logs) 
+Regresé a la sesión del usuario administrador original ejecutando `exit`. Una vez de vuelta como `ec2-user`, usé privilegios de superusuario para revisar las últimas líneas del archivo de seguridad (`/var/log/secure`) y verificar cómo el sistema registró el intento fallido de `arosalez`.
+
