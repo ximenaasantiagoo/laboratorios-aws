@@ -65,27 +65,27 @@ Para simular un ajuste de capacidad, detuve el servidor web hasta que su estado 
 
    ![imagen11](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso6.png?raw=true)
    
-* **Escalamiento de Cómputo:** Modifiqué el tipo de instancia de `t3.micro` a `t3.small` desde el menú de configuración, duplicando la capacidad de memoria RAM disponible para el servidor.
+  * **Escalamiento de Cómputo:** Modifiqué el tipo de instancia de `t3.micro` a `t3.small` desde el menú de configuración, duplicando la capacidad de memoria RAM disponible para el servidor.
   
-  ![imagen12](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso6.1.png?raw=true)
+    ![imagen12](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso6.1.png?raw=true)
 
-* **Escalamiento de Almacenamiento:** Ingresé a la sección de volúmenes de Amazon EBS y expandí el tamaño del volumen raíz, incrementando el disco virtual de `8 GiB ` a `10 GiB`.
+  * **Escalamiento de Almacenamiento:** Ingresé a la sección de volúmenes de Amazon EBS y expandí el tamaño del volumen raíz, incrementando el disco virtual de `8 GiB ` a `10 GiB`.
   
-  ![imagen13](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso6.2.png?raw=true)
+    ![imagen13](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso6.2.png?raw=true)
   
 Finalmente volví a encender la instancia (`Start instance`) para aplicar las nuevas capacidades de hardware de manera exitosa.
 
   ![imagen14](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso6.3.png?raw=true)
 ### Paso 7: Validación de Seguridad y Cierre del Ciclo de Vida
 Comprobé el funcionamiento del mecanismo que evita borrados accidentales:
-* **Prueba de Eliminación:** Intenté terminar (`Terminate`) la instancia de manera directa y AWS me lo bloqueó gracias a la protección contra terminación que habíamos activado antes
-* **Bloqueo de Seguridad:** El sistema rechazó la solicitud mediante un mensaje de error en la consola, validando que la protección contra terminación se encontraba activa y previno un borrado accidental.
+  * **Prueba de Eliminación:** Intenté terminar (`Terminate`) la instancia de manera directa y AWS me lo bloqueó gracias a la protección contra terminación que habíamos activado antes
+  * **Bloqueo de Seguridad:** El sistema rechazó la solicitud mediante un mensaje de error en la consola, validando que la protección contra terminación se encontraba activa y previno un borrado accidental.
   
-  ![imagen15](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.png?raw=true)
+    ![imagen15](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.png?raw=true)
   
-* **Desactivación y Limpieza:** Modifiqué los atributos de la instancia para deshabilitar la protección y procedí a terminar el servidor de forma definitiva.
+  * **Desactivación y Limpieza:** Modifiqué los atributos de la instancia para deshabilitar la protección y procedí a terminar el servidor de forma definitiva.
   
-  ![imagen16](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.1.png?raw=true)
+    ![imagen16](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.1.png?raw=true)
 
-  ![imagen17](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.2.png?raw=true)
+    ![imagen17](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.2.png?raw=true)
 
