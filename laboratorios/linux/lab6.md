@@ -47,7 +47,7 @@ Para verificar que todos los archivos y carpetas de `CompanyA` se crearon correc
   * Verifiqué la copia, listando el interior del destino con `ls HR/Finance`
   * Posteriormente, intenté borrar la carpeta Finance original del directorio `raíz con rmdir Finance`, pero el sistema arrojó un error debido a que la carpeta no estaba vacía. Para solucionarlo sin usar comandos destructivos directos, eliminé primero los archivos internos de forma manual `rm Finance/ProfitAndLossStatements.csv Finance/Salary.csv`
   * Una vez vacía la carpeta, ejecuté rmdir Finance para dorelos eliminar del directorio raíz
-    
+
 ### Paso 8: Reestructuración (Mover y organizar subcarpetas)
   * Trasladé el directorio de Management para que quedara alojado de forma interna en HR usando el comando`mv` (move)
   * Verifiqué el cambio revisando tanto la raíz como la nueva subruta con  `ls . HR/Management`
