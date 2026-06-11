@@ -25,3 +25,6 @@ Utilicé la función de autocompletado de la terminal escribiendo `whoa` y presi
 
 ### Paso 7: Optimización del flujo de trabajo mediante el historial de comandos
 * **Consulta de historial:** Ejecuté el comando `history` para visualizar el registro de todos los comandos utilizados en la sesión actual y confirmar que coincidieran con las acciones anteriores.  
+* **Búsqueda inversa:** Utilicé el atajo `CTRL + R` para activar la búsqueda inversa en el historial. Escribí `TZ` para localizar rápidamente el comando de zona horaria ejecutado previamente.
+* **Reutilización del último comando:** Ingresé el comando `date` y después ejecuté la sintaxis `!!` para volver a correr de forma automática el comando más reciente en la terminal.
+  
