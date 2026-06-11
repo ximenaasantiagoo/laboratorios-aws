@@ -6,7 +6,7 @@
 ### Paso 1: Obtención de credenciales de acceso
 Primero obtuve las credenciales de acceso. Descargué el archivo de la llave privada seleccionando el botón `Download PEM` (se guardó como `labsuser.pem`). Posteriormente copié y guardé la dirección PublicIP (`IP pública`) que aparece en ese mismo panel. Cerré el panel de detalles haciendo clic en la `X`.  
 
-### Paso 2: Configuración de la llave conexión al Servidor mediante SSH 
+### Paso 2: Configuración de la llave y Conexión al Servidor mediante SSH 
 Una vez con los archivos listos, abrí la terminal y ejecuté los siguientes comandos para configurar la llave y conectarme:
 
 ### Paso 3: Exploración de los manuales de Linux (`man pages`)
