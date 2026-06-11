@@ -151,7 +151,7 @@ blockquote {
 .markdown-section {
   display: block;      
   margin: 20px auto;    
-  max-width: 85%;       
+  max-width: 60%;       
   height: auto;         
   border-radius: 8px;   
 }
