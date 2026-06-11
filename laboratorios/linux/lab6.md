@@ -53,5 +53,5 @@ Para verificar que todos los archivos y carpetas de `CompanyA` se crearon correc
   * Verifiqué el cambio revisando tanto la raíz como la nueva subruta con  `ls . HR/Management`
   * Cambié el directorio a Recursos Humanos con `cd HR` y creé una nueva carpeta para organizar al personal `mkdir Employees`
   * Luego, moví los archivos de evaluaciones y periodos de prueba dentro de esta nueva carpeta `mv Assessments.csv TrialPeriod.csv Employees`
-  * Finalmente erifiqué la organización final ejecutando `ls . Employees`
+  * Finalmente verifiqué la organización final ejecutando `ls . Employees`
 
