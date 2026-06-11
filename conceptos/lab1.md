@@ -6,3 +6,7 @@
 > **AMI (Amazon Machine Image):**
 >
 >  Plantilla preconfigurada que contiene el sistema operativo, el servidor de aplicaciones y el software inicial para lanzar una instancia.
+
+> **Tipo de Instancia (Instance Type):**
+>
+>  Combinación específica de CPU, memoria, almacenamiento y capacidad de red que determina el hardware y el rendimiento del servidor. Ejemplo t3.micro
