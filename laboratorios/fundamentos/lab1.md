@@ -81,11 +81,11 @@ Comprobé el funcionamiento del mecanismo que evita borrados accidentales:
 * **Prueba de Eliminación:** Intenté terminar (`Terminate`) la instancia de manera directa y AWS me lo bloqueó gracias a la protección contra terminación que habíamos activado antes
 * **Bloqueo de Seguridad:** El sistema rechazó la solicitud mediante un mensaje de error en la consola, validando que la protección contra terminación se encontraba activa y previno un borrado accidental.
   
-  [imagen15](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.png?raw=true)
+  ![imagen15](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.png?raw=true)
   
 * **Desactivación y Limpieza:** Modifiqué los atributos de la instancia para deshabilitar la protección y procedí a terminar el servidor de forma definitiva.
   
-  [imagen16](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.1.png?raw=true)
+  ![imagen16](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.1.png?raw=true)
 
-  [imagen17](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.2.png?raw=true)
+  ![imagen17](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab1/paso7.2.png?raw=true)
 
