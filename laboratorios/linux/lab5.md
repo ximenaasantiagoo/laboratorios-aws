@@ -16,7 +16,7 @@ Para comenzar a aprender los comandos básicos del editor `Vim`, ejecuté el tut
  * Inicié el editor `Vim` creando un nuevo archivo de texto con el nombre `helloworld`
  * Una vez dentro del entorno de edición, presioné la tecla `i` para activar el modo de inserción
  * Para salir del modo de inserción, presioné la tecla `ESC`. Finalmente, guardé los cambios realizados y cerré el archivo ejecutando el comando (`:wq`)
-   
+
 ### Paso 5: Modificar el archivo existente sin guardar cambios
  * Recuperé el último comando y volví a abrir el archivo para realizar una modificación
  * Activé nuevamente el modo de inserción con `i` y añadí la siguiente línea
