@@ -11,7 +11,7 @@ Para obtener las claves de acceso, descargué el archivo de la llave privada sel
   * Verifiqué que el usuario se había integrado correctamente al sistema, ejecuté una lectura del archivo `/etc/passwd` aplicando un filtro con `cut` para mostrar únicamente la primera columna correspondiente a los       nombres de usuario
   
 _**Nota:** Al introducir la contraseña por defecto (`P@ssword1234!`), el sistema no muestra caracteres ni asteriscos en la pantalla._
-  
+
 ### Paso 5: Alta de los usuarios restantes
 Repitiendo la estructura de los comandos anteriores (`sudo useradd` y `sudo passwd`), completé el registro individual en el servidor para el resto del personal requerido:
 
