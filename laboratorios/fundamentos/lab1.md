@@ -34,7 +34,7 @@ Una vez encendida la instancia, revisé que todo funcionara bien:
 
 Cuando intenté abrir la `Public IPv4` en el navegador, la página no cargó. El problema era que AWS bloquea todo el tráfico por defecto entonces para resolverlo realicé lo siguiente:
 * Abrí el `Web Server Security Group` y edité sus reglas de entrada (`Inbound rules`)
-* Agregué una regla que permite tráfico `HTTP` por el puerto `80` desde cualquier origen
+* Agregué una regla que permite tráfico `HTTP` por el puerto `80` desde cualquier origen.
   
 Después de eso, el servidor respondió correctamente en el navegador.
 
