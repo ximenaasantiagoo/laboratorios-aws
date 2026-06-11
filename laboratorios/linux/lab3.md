@@ -23,3 +23,5 @@ Utilicé la función de autocompletado de la terminal escribiendo `whoa` y presi
 * **Calendarios:** Consulté el calendario en formato Juliano (donde los días corren de forma consecutiva del 1 al 365 en lugar de reiniciar cada mes) ejecutando `cal -j`, y exploré vistas alternativas del calendario con los comandos `cal -s` (inicio de semana en domingo) y `cal -m` (inicio de semana en lunes).
 * **Identidad:** Ingresé el comando `id ec2-user` para visualizar los identificadores únicos de usuario (UID), de grupo (GID) y los grupos a los que pertenece mi usuario actual en el sistema.
 
+### Paso 7: Optimización del flujo de trabajo mediante el historial de comandos
+* **Consulta de historial:** Ejecuté el comando `history` para visualizar el registro de todos los comandos utilizados en la sesión actual y confirmar que coincidieran con las acciones anteriores.  
