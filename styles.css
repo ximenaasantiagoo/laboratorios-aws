@@ -147,3 +147,11 @@ blockquote {
 .markdown-section a:not(h1):not(h2):not(h3):hover {
   text-decoration: underline;
 }
+
+.markdown-section {
+  display: block;      
+  margin: 20px auto;    
+  max-width: 85%;       
+  height: auto;         
+  border-radius: 8px;   
+}
