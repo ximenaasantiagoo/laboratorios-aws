@@ -44,6 +44,6 @@ Intenté crear un archivo vacío llamado `myFile.txt` dentro de este directorio,
   *  Intenté forzar la creación del archivo elevando privilegios mediante el comando `sudo`. Tras ingresar nuevamente la contraseña de la cuenta para confirmar la identidad, la terminal arrojó el siguiente aviso de seguridad:
   *  El comando falló porque `arosalez` no forma parte del archivo de configuración de sudoers (usuarios autorizados con privilegios raíz), lo que provocó que el sistema operativo bloqueara la instrucción y generara una alerta interna.
 
-### Paso 15: Visualización de bitácoras (Logs) 
+### Paso 13: Visualización de bitácoras (Logs) 
 Regresé a la sesión del usuario administrador original ejecutando `exit`. Una vez de vuelta como `ec2-user`, usé privilegios de superusuario para revisar las últimas líneas del archivo de seguridad (`/var/log/secure`) y verificar cómo el sistema registró el intento fallido de `arosalez`.
 
