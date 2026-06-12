@@ -1,6 +1,6 @@
 # Lab: Edición de Archivos
 > ### Objetivo:
-> Desarrollar habilidades prácticas en la edición y manipulación de archivos en entornos Linux utilizando los editores de texto `vim` y `nano`.
+> Desarrollar habilidades prácticas en la edición y manipulación de archivos en entornos Linux utilizando los editores de texto vim y nano.
 
 ### Paso 1: Conexión a la instancia EC2 mediante SSH
 Descargué la llave privada (labsuser.pem) y la IP pública desde AWS. Luego, desde la terminal en la carpeta de descargas, aseguré los permisos de la llave con `chmod 400` y me conecté al servidor ejecutando `ssh -i labsuser.pem ec2-user@<IP_Pública>`, aceptando la autenticidad del host en el primer acceso.
