@@ -30,7 +30,7 @@ Con los grupos listos, utilicé el comando `usermod` con `-a -G` para estructura
 ### Paso 8: Inclusión del usuario administrador (ec2-user)
 Como medida de control y supervisión del laboratorio, añadí al usuario por defecto del sistema (`ec2-user`) a absolutamente todos los grupos creados
 
-### Paso 9: Validación final de membresías
+### Paso 9: Validación final de los grupos
 Para validar que cada usuario estuviera dentro del sector correspondiente, ejecuté una última consulta completa al archivo de configuración de grupos
 
 ### Paso 10: Cambio de identidad a un usuario nuevo
