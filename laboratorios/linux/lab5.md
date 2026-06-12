@@ -2,8 +2,8 @@
 > ### Objetivo:
 > Desarrollar habilidades prácticas en la edición y manipulación de archivos en entornos Linux utilizando los editores de texto `vim` y `nano`.
 
-### Paso 1:Conectarse a la instancia EC2 de Amazon Linux mediante SSH (Mac/Linux)
-Para obtener las claves de acceso, descargué el archivo de la llave privada seleccionando el botón Download PEM (se guardó como labsuser.pem). Posteriormente copié y guardé la dirección PublicIP que aparece en ese mismo panel. Cerré el panel de detalles haciendo clic en la `X`. 
+### Paso 1: Conexión a la instancia EC2 mediante SSH
+Descargué la llave privada (labsuser.pem) y la IP pública desde AWS. Luego, desde la terminal en la carpeta de descargas, aseguré los permisos de la llave con `chmod 400` y me conecté al servidor ejecutando `ssh -i labsuser.pem ec2-user@<IP_Pública>`, aceptando la autenticidad del host en el primer acceso.
 
 ### Paso 2: Iniciar la sesión interactiva de Vimtutor
 Para comenzar a aprender los comandos básicos del editor `Vim`, ejecuté el tutor interactivo desde la terminal.
