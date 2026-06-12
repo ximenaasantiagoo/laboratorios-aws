@@ -38,19 +38,22 @@ Como medida de control y supervisión del laboratorio, añadí al usuario por de
 ### Paso 9: Validación final de los grupos
 Para validar que cada usuario estuviera dentro del sector correspondiente, ejecuté una última consulta completa al archivo de configuración de grupos
 ![imagen14](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso9.png?raw=true) 
-![imagen15](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso9.1png?raw=true)
+![imagen15](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso9.1.png?raw=true)
 ### Paso 10: Cambio de identidad a un usuario nuevo
   * Para validar el comportamiento del entorno y los permisos de las nuevas cuentas, inicié sesión como el usuario `arosalez` utilizando el comando `su` (switch user)
   * Al cambiar de identidad, la terminal se actualizó mostrando la estructura `[arosalez@ec2-user]$`. El indicador final confirmó que seguía posicionada dentro del directorio home del usuario administrador original,     lo cual verifiqué ejecutando `pwd`
-    ![imagen15](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso10.png?raw=true)
+    ![imagen16](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso10.png?raw=true)
     
 ### Paso 11: Prueba de restricciones de escritura y denegación de permisos
 Intenté crear un archivo vacío llamado `myFile.txt` dentro de este directorio, empleando el comando `touch`. El sistema operativo bloqueó la acción debido a que el usuario `arosalez` no cuenta con permisos de escritura sobre la carpeta personal de `ec2-user`.
+![imagen17](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso11.png?raw=true)
 
 ### Paso 12: Intento como administrador  (Sudoers)
-  *  Intenté forzar la creación del archivo elevando privilegios mediante el comando `sudo`. Tras ingresar nuevamente la contraseña de la cuenta para confirmar la identidad, la terminal arrojó el siguiente aviso de seguridad:
-  *  El comando falló porque `arosalez` no forma parte del archivo de configuración de sudoers (usuarios autorizados con privilegios raíz), lo que provocó que el sistema operativo bloqueara la instrucción y generara una alerta interna.
+Intenté forzar la creación del archivo elevando privilegios mediante el comando `sudo`. Tras ingresar nuevamente la contraseña de la cuenta para confirmar la identidad, la terminal arrojó el siguiente aviso de seguridad. El comando falló porque `arosalez` no forma parte del archivo de configuración de sudoers (usuarios autorizados con privilegios raíz), lo que provocó que el sistema operativo bloqueara la instrucción y generara una alerta interna.
+ ![imagen18](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso12.png?raw=true)
 
 ### Paso 13: Visualización de bitácoras (Logs) 
 Regresé a la sesión del usuario administrador original ejecutando `exit`. Una vez de vuelta como `ec2-user`, usé privilegios de superusuario para revisar las últimas líneas del archivo de seguridad (`/var/log/secure`) y verificar cómo el sistema registró el intento fallido de `arosalez`.
+ ![imagen19](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso13.png?raw=true)
+ ![imagen19](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso13.1.png?raw=true)
 
