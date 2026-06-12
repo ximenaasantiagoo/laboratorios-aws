@@ -4,14 +4,16 @@
 
 ### Paso 1: Conexión a la instancia EC2 mediante SSH
 Descargué la llave privada (labsuser.pem) y la IP pública desde AWS. Luego, desde la terminal en la carpeta de descargas, aseguré los permisos de la llave con `chmod 400` y me conecté al servidor ejecutando `ssh -i labsuser.pem ec2-user@<IP_Pública>`, aceptando la autenticidad del host en el primer acceso.
-
+![imagen1](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso1.png?raw=true)
+![imagen2](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso1.1.png?raw=true)
 ### Pase 2: Creación de Usuarios Locales 
   * Antes de comenzar, validé que estuviera en el directorio home del usuario actual ejecutando el comando `pwd`
   * Para registrar al primer usuario (arosalez) y configurar su credencial de acceso inicial, ejecuté secuencialmente los comandos `useradd` y `passwd` con privilegios de superusuario
   * Verifiqué que el usuario se había integrado correctamente al sistema, ejecuté una lectura del archivo `/etc/passwd` aplicando un filtro con `cut` para mostrar únicamente la primera columna correspondiente a los       nombres de usuario
-  
+    
 _**Nota:** Al introducir la contraseña por defecto (`P@ssword1234!`), el sistema no muestra caracteres ni asteriscos en la pantalla._
-
+![imagen3](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso2.png?raw=true)
+![imagen4](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/lab4/paso2.1.png?raw=true)
 ### Paso 3: Alta de los usuarios restantes
 Repitiendo la estructura de los comandos anteriores (`sudo useradd` y `sudo passwd`), completé el registro individual en el servidor para el resto del personal requerido:
 
