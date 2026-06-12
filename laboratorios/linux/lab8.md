@@ -18,7 +18,7 @@ Descargué la llave privada (labsuser.pem) y la IP pública desde AWS. Luego, de
   * Repetí el proceso para crear un segundo archivo llamado `absolute_mode_file`, pero esta vez utilicé el modo absoluto ejecutando `sudo chmod 764` para asignar permisos específicos a usuario, grupo y otros mediante números.
   * Al final, verifiqué ambos cambios ejecutando `ls -l` para comprobar que las nomenclaturas de lectura, escritura y ejecución coincidieran con lo configurado.
 
-## Paso 4: Asignación y verificación de permisos por grupo 
+### Paso 4: Asignación y verificación de permisos por grupo 
   * Aseguré mi posición en `companyA` con `pwd`
   * Después, configuré los propietarios y grupos correspondientes para las nuevas áreas ejecutando `sudo chown -R eowusu:Shipping Shipping` para el departamento de envíos, y `sudo chown -R nwolf:Sales Sales` para el de ventas.
   * Finalmente, validé que la estructura interna y los privilegios asignados fueran correctos ejecutando los comandos `ls -laR Shipping` y `ls -laR Sales` de manera individual.
