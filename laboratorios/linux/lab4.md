@@ -40,8 +40,8 @@ Para validar que cada usuario estuviera dentro del sector correspondiente, ejecu
 ![imagen14](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab4/paso9.png?raw=true) 
 ![imagen15](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab4/paso9.1.png?raw=true)
 ### Paso 10: Cambio de identidad a un usuario nuevo
-  * Para validar el comportamiento del entorno y los permisos de las nuevas cuentas, inicié sesión como el usuario `arosalez` utilizando el comando `su` (switch user)
-  * Al cambiar de identidad, la terminal se actualizó mostrando la estructura `[arosalez@ec2-user]$`. El indicador final confirmó que seguía posicionada dentro del directorio home del usuario administrador original,     lo cual verifiqué ejecutando `pwd`
+ * Para validar el comportamiento del entorno y los permisos de las nuevas cuentas, inicié sesión como el usuario `arosalez` utilizando el comando `su` (switch user)
+ * Al cambiar de identidad, la terminal se actualizó mostrando la estructura `[arosalez@ec2-user]$`. El indicador final confirmó que seguía posicionada dentro del directorio home del usuario administrador original,     lo cual verifiqué ejecutando `pwd`
     ![imagen16](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab4/paso10.png?raw=true)
 ### Paso 11: Prueba de restricciones de escritura y denegación de permisos
 Intenté crear un archivo vacío llamado `myFile.txt` dentro de este directorio, empleando el comando `touch`. El sistema operativo bloqueó la acción debido a que el usuario `arosalez` no cuenta con permisos de escritura sobre la carpeta personal de `ec2-user`.
