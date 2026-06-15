@@ -17,9 +17,9 @@ Descargué la llave privada (labsuser.pem) y la IP pública desde AWS. Luego, de
 
 ### Paso 3: Monitoreo del sistema en tiempo real (top)
 - Ejecuté el comando `top` en la terminal para analizar el rendimiento del sistema y visualizar la lista dinámica de procesos y hilos activos. Durante la inspección, observé en la segunda línea el estado de las tareas, así como el consumo de CPU y memoria.
-     ![imagen5](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso3.png?raw=true)
+    ![imagen5](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso3.png?raw=true)
 - Por último, presioné la tecla `q` para salir del monitor y utilicé `top -hv` para consultar las opciones de uso y la versión de la herramienta.
-     ![imagen6](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso3.1.png?raw=true)
+    ![imagen6](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso3.1.png?raw=true)
 
 ### Paso 4: Automatización de tareas con un Cron Job
 - Confirmé mi ubicación con `pwd` y abrí el editor de tareas programadas ejecutando `sudo crontab -e`.
