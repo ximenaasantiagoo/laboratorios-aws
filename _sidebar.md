@@ -11,6 +11,16 @@
   - [Laboratorio 7](laboratorios/linux/lab7.md)
   - [Laboratorio 8](laboratorios/linux/lab8.md)
   - [Laboratorio 9](laboratorios/linux/lab9.md)
+  - [Laboratorio 10](laboratorios/linux/lab10.md)
+  - [Laboratorio 11](laboratorios/linux/lab11.md)
+  - [Laboratorio 12](laboratorios/linux/lab12.md)
+  - [Laboratorio 13](laboratorios/linux/lab13.md)
+  - [Laboratorio 14](laboratorios/linux/lab14.md)
 - **Redes**
+  - [Laboratorio 15](laboratorios/redes/lab15.md)
+  - [Laboratorio 16](laboratorios/redes/lab16.md)
+  - [Laboratorio 17](laboratorios/redes/lab17.md)
+  - [Laboratorio 18](laboratorios/redes/lab18.md)
+  - [Laboratorio 19](laboratorios/redes/lab19.md)
 - **Seguridad**
 - **Bases de Datos**
