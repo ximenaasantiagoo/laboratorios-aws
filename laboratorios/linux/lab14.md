@@ -1,1 +1,1 @@
-# Lab: Trabajo con comandos
+# Lab: El shell Bash
