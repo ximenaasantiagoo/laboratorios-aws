@@ -1,1 +1,1 @@
-# Lab: El shell Bash
+# Lab: Shell Bash
