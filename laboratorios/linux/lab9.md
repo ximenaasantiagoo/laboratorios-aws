@@ -18,9 +18,14 @@ Descargué la llave privada (labsuser.pem) y la IP pública desde AWS. Luego, de
      ![imagen5](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso3.png?raw=true)
    * Por último, presioné la tecla `q` para salir del monitor y utilicé `top -hv` para consultar las opciones de uso y la versión de la herramienta.
      ![imagen6](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso3.1.png?raw=true)
+     
 ### Paso 4: Automatización de tareas con un Cron Job
-   * Confirmé mi ubicación con `pwd` y abrí el editor de tareas programadas ejecutando `sudo crontab -e`.
-   * Dentro del archivo, configuré las variables del entorno (`SHELL`, `PATH`, `MAILTO`) y programé una tarea horaria (`0 * * * *`) que busca archivos `.csv`, enmascara sus nombres reemplazando caracteres por `#####` usando `sed`, y redirige el reporte a `filteredAudit.csv`.
-     ![imagen7](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso4.png?raw=true)
-   * Finalmente, guardé los cambios con `:wq` y validé que cron job se hubiera instalado correctamente con el comando `sudo crontab -l`.
-     ![imagen8](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso4.1.png?raw=true)
+
+* Confirmé mi ubicación con `pwd` y abrí el editor de tareas programadas ejecutando `sudo crontab -e`.
+* Dentro del archivo, configuré las variables del entorno (`SHELL`, `PATH`, `MAILTO`) y programé una tarea horaria (`0 * * * *`) que busca archivos `.csv`, enmascara sus nombres reemplazando caracteres por `#####` usando `sed`, y redirige el reporte a `filteredAudit.csv`.
+    
+    ![imagen7](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso4.png?raw=true)
+
+* Finalmente, guardé los cambios con `:wq` y validé que el cron job se hubiera instalado correctamente con el comando `sudo crontab -l`.
+    
+    ![imagen8](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab9/paso4.1.png?raw=true)
