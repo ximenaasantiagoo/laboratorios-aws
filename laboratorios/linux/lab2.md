@@ -18,3 +18,4 @@ Utilicé las flechas del teclado ($\uparrow$ / $\downarrow$) para desplazarme y 
 ### Paso 5: Salida del manual
 Finalmente, para cerrar el entorno del manual y regresar a la línea de comandos principal de mi terminal, presioné la tecla `q`
 ![imagen5](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab2/paso5.png?raw=true)
+
