@@ -141,7 +141,7 @@ blockquote {
 }
 
 .markdown-section a:not(h1):not(h2):not(h3) {
-  color: var(--theme-color) !important; 
+  color: #ffffff !important; 
   font-weight: 500;
 }
 
