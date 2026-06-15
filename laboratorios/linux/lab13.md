@@ -1,1 +1,1 @@
-# Lab: Administración de archivos de registro
+# Lab: Trabajo con comandos
