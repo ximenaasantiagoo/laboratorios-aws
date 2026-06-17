@@ -18,8 +18,8 @@ Por último, instalé `httpd` para dejar un registro en el historial de actualiz
 ### Paso 3: Reversión de la actualización de un paquete en Yum
 Revisé el historial de transacciones de `yum` para identificar el ID de la última actualización del sistema. 
 ![imagen5](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab11/paso3.png?raw=true)
-Luego revisé ese movimiento y usé el comando `undo` con permisos de administrador para volver el paquete a su versión anterior y evitar problemas en el sistema.
 ![imagen6](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab11/paso3.1.png?raw=true)
+Luego revisé ese movimiento y usé el comando `undo` con permisos de administrador para volver el paquete a su versión anterior y evitar problemas en el sistema.
 
 ### Paso 4: Instalación y verificación de AWS CLI en Red Hat Linux
 Verifiqué las versiones instaladas de `python3` y `pip3` para asegurar la compatibilidad con los requisitos del sistema. 
