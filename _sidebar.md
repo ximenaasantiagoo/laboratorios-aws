@@ -22,5 +22,6 @@
   - [Laboratorio 17](labs/redes/lab17.md)
   - [Laboratorio 18](labs/redes/lab18.md)
   - [Laboratorio 19](labs/redes/lab19.md)
-- **Seguridad**
-- **Bases de Datos**
+
+
+
