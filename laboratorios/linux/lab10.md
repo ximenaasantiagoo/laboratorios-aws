@@ -13,9 +13,9 @@ Descargué la llave privada y la IP pública desde AWS. Luego, desde la terminal
 Primero, comprobé el estado del servicio `httpd` para validar si se encontraba en ejecución dentro del sistema
 ![imagen3](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab10/paso2.png?raw=true)
 Al ejecutarlo, la terminal indicó que el servicio estaba instalado y listo (loaded), pero con un estado inactive (dead), lo que significa que el servidor web no estaba corriendo en ese momento. Para iniciar el servicio, ejecuté el comando de arranque
-![imagen4](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab10/paso2.2.png?raw=true)
+![imagen4](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab10/paso2.1.png?raw=true)
 Posteriormente, volví a verificar el estado para confirmar que el cambio se hubiera aplicado correctamente
-![imagen5](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab10/paso2.3.png?raw=true)
+![imagen5](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/imagenes/linux/lab10/paso2.2.png?raw=true)
 
 ### Paso 3: Validación de conectividad HTTP y detención del servicio
 Con el servidor en ejecución, abrí una nueva pestaña en el navegador web e ingresé la dirección IP pública de la instancia utilizando el protocolo HTTP, esto con el fin de validar su funcionamiento.
