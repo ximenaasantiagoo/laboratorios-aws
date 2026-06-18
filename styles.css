@@ -1,10 +1,10 @@
-/* Variables globales y configuración base */
+
 :root {
-  --theme-color: #2dd4bf;      /* Turquesa */
-  --accent-pink: #f472b6;      /* Rosa pastel */
-  --grey-color: #f1f5f9;       /* Blanco medio */
-  --body-text: #cbd5e1;        /* Gris medio */
-  --font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --theme-color: #2dd4bf; /* Turquesa */
+  --accent-pink: #f472b6; /* Rosa */
+  --grey-color: #f1f5f9; /* Blanco */
+  --body-text: #cbd5e1; /* Gris */
+  --font-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --bg-dark: #0f172a;
   --bg-card: #1e293b;
   --border-color: #243249;
@@ -16,64 +16,68 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Fondos y diseño general */
-body, .content {
-  background-color: var(--bg-dark) !important; 
+body,
+.content {
+  background-color: var(--bg-dark) !important;
 }
 
 .sidebar {
-  background-color: #161e2e !important; 
-  border-right: 1px solid var(--border-color) !important; 
+  background-color: #161e2e !important;
+  border-right: 1px solid var(--border-color) !important;
 }
 
-/* Títulos y Subtítulos */
-.markdown-section h1, 
-.markdown-section h1 span, 
+.markdown-section h1,
+.markdown-section h1 span,
 #main h1 {
-  color: var(--accent-pink) !important;  
+  color: var(--accent-pink) !important;
   font-weight: 800 !important;
-  letter-spacing: -0.02em !important;   
+  letter-spacing: -0.02em !important;
   text-transform: uppercase !important;
 }
 
-.markdown-section h2, .markdown-section h3, .markdown-section h4,
-.markdown-section h2 span, .markdown-section h3 span, .markdown-section h4 span,
-#main h2, #main h3, #main h4,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h2 span,
+.markdown-section h3 span,
+.markdown-section h4 span,
+#main h2,
+#main h3,
+#main h4,
 .sidebar .app-name {
-  color: #ffffff !important;            
+  color: #ffffff !important;
   font-weight: 800 !important;
 }
 
-/* Menú Lateral */
 .sidebar ul li a {
-  color: #94a3b8 !important;            
-  white-space: normal !important;      
-  word-wrap: break-word !important;     
+  color: #94a3b8 !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
   line-height: 1.4 !important;
   font-size: 10pt;
 }
 
 .sidebar ul li strong {
   display: block !important;
-  color: var(--theme-color) !important; 
+  color: var(--theme-color) !important;
   font-size: 10.5pt;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 12px 0 6px 0 !important;   
+  padding: 12px 0 6px 0 !important;
   margin-bottom: 0 !important;
 }
 
 .sidebar ul li.active > a {
-  color: #f8fafc !important;            
+  color: #f8fafc !important;
   font-weight: 600 !important;
-  text-decoration: none !important;    
+  text-decoration: none !important;
   border-right: 3px solid var(--accent-pink) !important;
 }
 
 .sidebar ul li a:hover {
-  color: #f8fafc !important;            
+  color: #f8fafc !important;
   font-weight: 500;
-  text-decoration: none !important;    
+  text-decoration: none !important;
 }
 
 .sidebar-nav > ul > li,
@@ -84,30 +88,30 @@ body, .content {
 
 .sidebar ul li ul {
   padding-left: 15px !important;
-  margin: 2px 0 8px 0 !important; 
+  margin: 2px 0 8px 0 !important;
 }
 
-/* Bloques de texto y Componentes compartidos */
-code, .badge-pink {
+code,
+.badge-pink {
   display: inline-block;
-  font-size: 12px !important;                
-  font-weight: 500 !important;                
-  color: var(--accent-pink) !important;       
-  background-color: rgba(244, 114, 182, 0.1) !important; 
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: var(--accent-pink) !important;
+  background-color: rgba(244, 114, 182, 0.1) !important;
   border: 1px solid rgba(244, 114, 182, 0.15) !important;
-  padding: 4px 12px !important;              
-  border-radius: 12px !important;            
+  padding: 4px 12px !important;
+  border-radius: 12px !important;
   font-family: Arial, sans-serif !important;
   letter-spacing: 0.2px !important;
 }
 
 code {
-  background-color: var(--bg-card) !important; 
+  background-color: var(--bg-card) !important;
 }
 
 .badge-pink {
-  margin-left: 8px;                                     
-  vertical-align: middle;                                     
+  margin-left: 8px;
+  vertical-align: middle;
 }
 
 pre {
@@ -117,31 +121,30 @@ pre {
 }
 
 blockquote {
-  background-color: var(--bg-card) !important; 
+  background-color: var(--bg-card) !important;
   border-left: 4px solid var(--accent-pink) !important;
   color: #94a3b8 !important;
-  padding: 12px 20px !important;      
-  margin: 1.5em 0 !important;            
+  padding: 12px 20px !important;
+  margin: 1.5em 0 !important;
   border-radius: 0 6px 6px 0;
 }
 
-/* Elementos divisores y Enlaces */
 .content hr {
   border: none;
-  background: var(--border-color) !important;      
+  background: var(--border-color) !important;
   height: 1px;
   margin: 2em 0;
 }
 
-.markdown-section h1 a, 
-.markdown-section h2 a, 
+.markdown-section h1 a,
+.markdown-section h2 a,
 .markdown-section h3 a,
 .markdown-section a:not(h1):not(h2):not(h3) {
   text-decoration: none;
 }
 
 .markdown-section a:not(h1):not(h2):not(h3) {
-  color: #ffffff !important; 
+  color: #ffffff !important;
   font-weight: 500;
 }
 
@@ -150,9 +153,9 @@ blockquote {
 }
 
 .markdown-section {
-  display: block;      
-  margin: 20px auto;    
-  max-width: 75%;       
-  height: auto;         
-  border-radius: 8px;   
+  display: block;
+  margin: 20px auto;
+  max-width: 75%;
+  height: auto;
+  border-radius: 8px;
 }

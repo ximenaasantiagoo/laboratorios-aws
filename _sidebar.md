@@ -1,8 +1,9 @@
-* [Inicio](/)
-- **Fundamentos de la Nube**
+- [Inicio](/)
+
+* **Fundamentos de la Nube**
   - [Laboratorio 1](labs/fundamentos/lab1.md)
-      - [Glosario](concepts/lab1.md)
-- **Linux**
+    - [Glosario](concepts/lab1.md)
+* **Linux**
   - [Laboratorio 2](labs/linux/lab2.md)
   - [Laboratorio 3](labs/linux/lab3.md)
   - [Laboratorio 4](labs/linux/lab4.md)
@@ -17,11 +18,8 @@
   - [Laboratorio 13](labs/linux/lab13.md)
   - [Laboratorio 14](labs/linux/lab14.md)
   - [Laboratorio 15](labs/linux/lab15.md)
-- **Redes**
+* **Redes**
   - [Laboratorio 16](labs/redes/lab16.md)
   - [Laboratorio 17](labs/redes/lab17.md)
   - [Laboratorio 18](labs/redes/lab18.md)
   - [Laboratorio 19](labs/redes/lab19.md)
-
-
-
