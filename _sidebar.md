@@ -16,8 +16,8 @@
   - [Laboratorio 12](labs/linux/lab12.md)
   - [Laboratorio 13](labs/linux/lab13.md)
   - [Laboratorio 14](labs/linux/lab14.md)
+  - [Laboratorio 15](labs/linux/lab15.md)
 - **Redes**
-  - [Laboratorio 15](labs/redes/lab15.md)
   - [Laboratorio 16](labs/redes/lab16.md)
   - [Laboratorio 17](labs/redes/lab17.md)
   - [Laboratorio 18](labs/redes/lab18.md)

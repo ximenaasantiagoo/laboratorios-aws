@@ -29,3 +29,6 @@ Una vez creado el archivo, utilicé el comando `cut` para recortar el texto y qu
 
 `cut -d ',' -f 1 cities.csv`
 
+
+
+
