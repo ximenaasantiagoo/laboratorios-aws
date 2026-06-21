@@ -10,10 +10,10 @@ Descargué la llave privada y la IP pública desde AWS. Luego, desde la terminal
 
 ### Paso 2: Revisión de registros de seguridad y autenticación (Secure Logs)
 Primero, verifiqué que estuveiera en el directorio correcto (`companyA`) y revisé el archivo de registro de seguridad para visualizar los intentos de autenticación en el sistema 
-![imagen3](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab12/paso2.png?raw=true)
+![imagen3](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab12/paso2.1.png?raw=true)
 
 Este archivo permite identificar auditorías de acceso, mostrando las direcciones IP de origen, los puertos utilizados y si las credenciales fallaron o fueron aceptadas. Para salir de la visualización del archivo, presioné la tecla `q`.
-![imagen4](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab12/paso2.1.png?raw=true)
+![imagen4](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab12/paso2.png?raw=true)
 
 ### Paso 3: Inspección del historial de accesos con lastlog
 Finalmente para verificar la última fecha y hora de inicio de sesión de todos los usuarios registrados en el sistema, ejecuté la herramienta nativa de Linux `lastlog`.
