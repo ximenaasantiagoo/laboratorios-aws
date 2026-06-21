@@ -23,7 +23,7 @@ Para organizar la información, ejecuté el comando de ordenamiento `sort` sin n
 ![imagen6](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab13/paso3.1.png?raw=true)
 
 Finalmente, utilicé un pipe junto con `grep` para buscar específicamente la fábrica de París dentro del archivo
-![imagen7](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab13/paso3.2..png?raw=true)
+![imagen7](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab13/paso3.2.png?raw=true)
 
 ### Paso 4: Extracción de columnas con el comando cut
 Validé mi ubicación en la carpeta base y creé un nuevo archivo llamado `cities.csv` para aprender a separar información por columnas utilizando comas como divisiones. 
