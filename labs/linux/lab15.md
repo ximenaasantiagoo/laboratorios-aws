@@ -4,7 +4,6 @@
 
 ### Paso 1: Conexión a la instancia EC2 mediante SSH
 Descargué la llave privada y la IP pública desde AWS. Luego, desde la terminal en la carpeta de descargas, aseguré los permisos de la llave y me conecté al servidor, aceptando la autenticidad del host en el primer acceso.
-![imagen1](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab15/paso1.png?raw=true)
 ![imagen2](https://github.com/ximenaasantiagoo/laboratorios-aws/blob/main/images/linux/lab15/paso1.1.png?raw=true)
 
 ### Paso 2: Creación del script
