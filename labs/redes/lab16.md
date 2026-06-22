@@ -1,6 +1,6 @@
 # Lab: Direcciones IP públicas y privadas
 
-> Objetivo
+> ### Objetivo
 > Entender la diferencia entre una dirección IP privada y una pública. 
 
 
