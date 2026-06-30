@@ -23,3 +23,9 @@
   - [Laboratorio 17](labs/redes/lab17.md)
   - [Laboratorio 18](labs/redes/lab18.md)
   - [Laboratorio 19](labs/redes/lab19.md)
+  - [Laboratorio 20](labs/redes/lab20.md)
+  - [Laboratorio 21](labs/redes/lab21.md)
+  - [Laboratorio 22](labs/redes/lab22.md)
+* **Seguridad**
+  - [Laboratorio 23](labs/seguridad/lab23.md)
+  - [Laboratorio 24](labs/seguridad/lab24.md)
