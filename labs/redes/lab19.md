@@ -18,9 +18,7 @@ En el menú de la izquierda seleccioné `Route Tables`, hice clic en el botón `
 ### Paso 4: Crear puerta de enlace de Internet y conectar puerta de enlace
 En el panel de navegación izquierdo, seleccioné `Puertas de enlace de Internet`. Cree una puerta de enlace de Internet (`IGW`) y la configuré 
 
-
 Una vez creado, conecté la puerta de enlace de Internet a la VPC. 
-
 
 ### Paso 5: Configurar rutas y asociar la subred
 Seleccioné `Public Route Table` en la sección de `Route Tables` y realicé las siguientes dos configuraciones:
