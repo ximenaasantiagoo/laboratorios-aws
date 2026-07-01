@@ -53,14 +53,14 @@ Finalmente, fui al servicio de EC2 para levantar la instancia que tendrá el sit
 Para evitar instalar todo a mano después de encenderla, fui a Advanced details y pegué el siguiente script en la sección de User data. Esto automatiza la instalación de Apache, PHP, descarga la aplicación del cliente desde un bucket de S3 y enciende el servicio web: 
 #!/bin/bash
 
-# Instalar el servidor web Apache, MySQL y PHP
+Instalar el servidor web Apache, MySQL y PHP
 `yum install -y httpd mysql php`
 
-# Descargar los archivos del laboratorio del cliente
+Descargar los archivos del laboratorio del cliente
 wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RESTRT-1/267-lab-NF-build-vpc-web-server/s3/lab-app.zip
 unzip lab-app.zip -d /var/www/html/
 
-# Configurar Apache para que prenda automáticamente y arrancar el servicio
+Configurar Apache para que prenda automáticamente y arrancar el servicio
 `chkconfig httpd on`
 `service httpd start`
 
